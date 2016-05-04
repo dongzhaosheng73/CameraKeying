@@ -1,0 +1,3490 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dzstools</name>
+    </assembly>
+    <members>
+        <member name="M:DTTOOLS.ExpandClass.StringEx.DTCopyFile(System.String,System.String,System.Int32,System.String,System.Boolean)">
+            <summary>
+            文件拷贝
+            </summary>
+            <param name="sfile">源文件路径</param>
+            <param name="dfile">目的文件路径</param>
+            <param name="SectSize">传输大小 1048576</param>
+            <param name="type">文件扩展名</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:DTTOOLS.ExpandClass.StringEx.DTCopyFile(System.String,System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            文件拷贝
+            </summary>
+            <param name="sfile">源文件路径</param>
+            <param name="dfile">目的文件路径</param>
+            <param name="SectSize">传输大小 1048576</param>
+            <param name="type">文件扩展名</param>
+            <param name="index">进度值</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:DTTOOLS.ExpandClass.StringEx.DTLockft(System.String)">
+            检测文件是否可以使用true为可以使用false为不可使用
+            
+            <param name="file">文件名</param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.ExpandClass.StringEx.WriteMessage(System.String,System.String)">
+            <summary>
+            内容写入
+            </summary>
+            <param name="path">保存路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.ExpandClass.StringEx.GetMD5Hash(System.String)">
+            MD5加密函数
+            <param name="input">参数</param>
+            <returns>加密参数</returns>
+        </member>
+        <member name="M:DTTOOLS.ExpandClass.StringEx.ExeStart(System.String,System.Boolean)">
+            <summary>
+            启动应用
+            </summary>
+            <param name="repeat">是否重复启动</param>
+            <returns></returns>
+        </member>
+        <member name="T:CsharpHttpHelper.Item.AItem">
+            <summary>
+            A连接对象  Copyright：http://www.httphelper.com/
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.Item.AItem.Href">
+            <summary>
+            链接地址
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.Item.AItem.Text">
+            <summary>
+            链接文本
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.Item.AItem.Img">
+            <summary>
+            链接的图片，如果是文本链接则为空
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.Item.AItem.Html">
+            <summary>
+            整个连接Html
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.Item.AItem.Type">
+            <summary>
+            A链接的类型
+            </summary>
+        </member>
+        <member name="T:CsharpHttpHelper.Enum.AType">
+            <summary>
+            A链接的类型  Copyright：http://www.httphelper.com/
+            </summary>
+        </member>
+        <member name="F:CsharpHttpHelper.Enum.AType.Text">
+            <summary>
+            文本链接(默认)
+            </summary>
+        </member>
+        <member name="F:CsharpHttpHelper.Enum.AType.Img">
+            <summary>
+            图片链接
+            </summary>
+        </member>
+        <member name="M:CsharpHttpHelper.Helper.EncodingHelper.ByteToString(System.Byte[],System.Text.Encoding)">
+            <summary>
+            将字节数组转为字符串
+            </summary>
+            <param name="b">字节数组</param>
+            <param name="e">编码，默认为Default</param>
+            <returns></returns>
+        </member>
+        <member name="M:CsharpHttpHelper.Helper.EncodingHelper.StringToByte(System.String,System.Text.Encoding)">
+            <summary>
+            将字符串转为字节数组
+            </summary>
+            <param name="s">字符串</param>
+            <param name="e">编码，默认为Default</param>
+            <returns></returns>
+        </member>
+        <member name="T:CsharpHttpHelper.Helper.ExecJsHelper">
+            <summary>
+            用户执行JS的方法  Copyright：http://www.httphelper.com/
+            </summary>
+        </member>
+        <member name="M:CsharpHttpHelper.Helper.ExecJsHelper.JavaScriptEval(System.String,System.String)">
+            <summary>
+            直接调用JS方法并获取返回的值
+            </summary>
+            <param name="strJs">要执行的JS代码</param>
+            <param name="main">要调用的方法名</param>
+            <returns>执行结果</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.Helper.ExecJsHelper.SetScriptControlType(System.String,System.Object)">
+            <summary>
+            获取ScriptControl接口类
+            </summary>
+            <param name="strJs">JS</param>
+            <param name="obj">对象</param>
+            <returns>Type</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.Helper.ExecJsHelper.GetScriptControl">
+            <summary>
+            获取ScriptControl接口对象
+            </summary>
+            <returns>ScriptControl对象</returns>
+        </member>
+        <member name="T:CsharpHttpHelper.Helper.HtmlHelper">
+            <summary>
+            Html操作相关  Copyright：http://www.httphelper.com/
+            </summary>
+        </member>
+        <member name="M:CsharpHttpHelper.Helper.HtmlHelper.GetAList(System.String)">
+            <summary>
+            获取所有的A链接
+            </summary>
+            <param name="html">要分析的Html代码</param>
+            <returns>返回一个List存储所有的A标签</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.Helper.HtmlHelper.GetImgList(System.String)">
+            <summary>
+            获取所有的Img标签
+            </summary>
+            <param name="html">要分析的Html代码</param>
+            <returns>返回一个List存储所有的Img标签</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.Helper.HtmlHelper.StripHTML(System.String)">
+            <summary>
+            过滤html标签
+            </summary>
+            <param name="html">html的内容</param>
+            <returns>处理后的文本</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.Helper.HtmlHelper.ReplaceNewLine(System.String)">
+            <summary>
+            过滤html中所有的换行符号
+            </summary>
+            <param name="html">html的内容</param>
+            <returns>处理后的文本</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.Helper.HtmlHelper.GetBetweenHtml(System.String,System.String,System.String)">
+            <summary>
+            提取Html字符串中两字符之间的数据
+            </summary>
+            <param name="html">源Html</param>
+            <param name="s">开始字符串</param>
+            <param name="e">结束字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:CsharpHttpHelper.Helper.HtmlHelper.GetHtmlTitle(System.String)">
+            <summary>
+            提取网页Title
+            </summary>
+            <param name="html">Html</param>
+            <returns>返回Title</returns>
+        </member>
+        <member name="T:CsharpHttpHelper.Helper.HttpCookieHelper">
+            <summary>
+            Cookie操作帮助类 Copyright：http://www.httphelper.com/
+            </summary>
+        </member>
+        <member name="M:CsharpHttpHelper.Helper.HttpCookieHelper.GetSmallCookie(System.String)">
+            <summary>
+            根据字符生成Cookie和精简串，将排除path,expires,domain以及重复项
+            </summary>
+            <param name="strcookie">Cookie字符串</param>
+            <returns>精简串</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.Helper.HttpCookieHelper.StrCookieToCookieCollection(System.String)">
+            <summary>
+            将字符串Cookie转为CookieCollection
+            </summary>
+            <param name="strcookie">Cookie字符串</param>
+            <returns>List-CookieItem</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.Helper.HttpCookieHelper.CookieCollectionToStrCookie(System.Net.CookieCollection)">
+            <summary>
+            将CookieCollection转为字符串Cookie
+            </summary>
+            <param name="cookie">Cookie字符串</param>
+            <returns>strcookie</returns>
+        </member>
+        <member name="T:CsharpHttpHelper.HttpHelper">
+            <summary>
+            Http帮助类  Copyright：http://www.httphelper.com/
+            版本：1.4
+            作者：苏飞
+            更新时间：2014-10-25
+            </summary>
+        </member>
+        <member name="F:CsharpHttpHelper.HttpHelper.bll">
+            <summary>
+            HttpHelperBLL
+            </summary>
+        </member>
+        <member name="M:CsharpHttpHelper.HttpHelper.GetHtml(CsharpHttpHelper.HttpItem)">
+            <summary>
+            根据相传入的数据，得到相应页面数据
+            </summary>
+            <param name="item">参数类对象</param>
+            <returns>返回HttpResult类型</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.HttpHelper.GetImage(CsharpHttpHelper.HttpItem)">
+            <summary>
+            根据Url获取图片
+            </summary>
+            <param name="item">HttpItem参数</param>
+            <returns>返回图片，错误为NULL</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.HttpHelper.FastRequest(CsharpHttpHelper.HttpItem)">
+            <summary>
+            快速请求方法FastRequest（极速请求不接收数据,只做提交）不返回Header、Cookie、Html
+            </summary>
+            <param name="item">参数类对象</param>
+            <returns>返回HttpResult类型</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.HttpHelper.GetSmallCookie(System.String)">
+            <summary>
+            根据字符生成Cookie和精简串，将排除path,expires,domain以及重复项
+            </summary>
+            <param name="strcookie">Cookie字符串</param>
+            <returns>精简串</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.HttpHelper.StrCookieToCookieCollection(System.String)">
+            <summary>
+            将字符串Cookie转为CookieCollection
+            </summary>
+            <param name="strcookie">Cookie字符串</param>
+            <returns>List-CookieItem</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.HttpHelper.CookieCollectionToStrCookie(System.Net.CookieCollection)">
+            <summary>
+            将CookieCollection转为字符串Cookie
+            </summary>
+            <param name="cookie">Cookie字符串</param>
+            <returns>strcookie</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.HttpHelper.URLDecode(System.String,System.Text.Encoding)">
+            <summary>
+            使用指定的编码对象将 URL 编码的字符串转换为已解码的字符串。
+            </summary>
+            <param name="text">指定的字符串</param>
+            <param name="encoding">指定编码默认为Default</param>
+            <returns>解码后字符串</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.HttpHelper.URLEncode(System.String,System.Text.Encoding)">
+            <summary>
+            使用指定的编码对象对 URL 字符串进行编码。
+            </summary>
+            <param name="text">指定的字符串</param>
+            <param name="encoding">指定编码默认为Default</param>
+            <returns>转码后字符串</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.HttpHelper.GetNameValueCollection(System.String)">
+            <summary>
+            将Url参数字符串转为一个Key和Value的集合
+            </summary>
+            <param name="str">要转为集合的字符串</param>
+            <returns>NameValueCollection</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.HttpHelper.GetUrlHost(System.String)">
+            <summary>
+            提取网站主机部分就是host
+            </summary>
+            <param name="url">url</param>
+            <returns>host</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.HttpHelper.GetUrlIp(System.String)">
+            <summary>
+            提取网址对应的IP地址
+            </summary>
+            <param name="url">url</param>
+            <returns>返回Url对应的IP地址</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.HttpHelper.ToMD5(System.String)">
+            <summary>
+            传入明文，返回用MD%加密后的字符串32位长度
+            </summary>
+            <param name="str">要加密的字符串</param>
+            <returns>用MD5加密后的字符串</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.HttpHelper.ToSHA1(System.String)">
+            <summary>
+            传入明文，返回用SHA1密后的字符串
+            </summary>
+            <param name="str">要加密的字符串</param>
+            <returns>SHA1加密后的字符串</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.HttpHelper.JsonToObject``1(System.String)">
+            <summary>
+            将指定的Json字符串转为指定的T类型对象 
+            </summary>
+            <param name="jsonstr">字符串</param>
+            <returns>转换后的对象，失败为Null</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.HttpHelper.ObjectToJson(System.Object)">
+            <summary>
+            将指定的对象转为Json字符串
+            </summary>
+            <param name="obj">对象</param>
+            <returns>转换后的字符串失败为空字符串</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.HttpHelper.GetAList(System.String)">
+            <summary>
+            获取所有的A链接
+            </summary>
+            <param name="html">要分析的Html代码</param>
+            <returns>返回一个List存储所有的A标签</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.HttpHelper.GetImgList(System.String)">
+            <summary>
+            获取所有的Img标签
+            </summary>
+            <param name="html">要分析的Html代码</param>
+            <returns>返回一个List存储所有的Img标签</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.HttpHelper.StripHTML(System.String)">
+            <summary>
+            过滤html标签
+            </summary>
+            <param name="html">html的内容</param>
+            <returns>处理后的文本</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.HttpHelper.ReplaceNewLine(System.String)">
+            <summary>
+            过滤html中所有的换行符号
+            </summary>
+            <param name="html">html的内容</param>
+            <returns>处理后的文本</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.HttpHelper.GetBetweenHtml(System.String,System.String,System.String)">
+            <summary>
+            提取Html字符串中两字符之间的数据
+            </summary>
+            <param name="html">源Html</param>
+            <param name="s">开始字符串</param>
+            <param name="e">结束字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:CsharpHttpHelper.HttpHelper.GetHtmlTitle(System.String)">
+            <summary>
+            提取网页Title
+            </summary>
+            <param name="html">Html</param>
+            <returns>返回Title</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.HttpHelper.JavaScriptEval(System.String,System.String)">
+            <summary>
+            直接调用JS方法并获取返回的值
+            </summary>
+            <param name="strJs">要执行的JS代码</param>
+            <param name="main">要调用的方法名</param>
+            <returns>执行结果</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.HttpHelper.GetImage(System.Byte[])">
+            <summary>
+            将字节数组转为图片
+            </summary>
+            <param name=" b">字节数组</param>
+            <returns>返回图片</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.HttpHelper.ByteToString(System.Byte[],System.Text.Encoding)">
+            <summary>
+            将字节数组转为字符串
+            </summary>
+            <param name="b">字节数组</param>
+            <param name="e">编码，默认为Default</param>
+            <returns>字符串</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.HttpHelper.StringToByte(System.String,System.Text.Encoding)">
+            <summary>
+            将字符串转为字节数组
+            </summary>
+            <param name="s">字符串</param>
+            <param name="e">编码，默认为Default</param>
+            <returns>字节数组</returns>
+        </member>
+        <member name="T:CsharpHttpHelper.Base.HttphelperBase">
+            <summary>
+            Http连接操作帮助类  Copyright：http://www.httphelper.com/
+            </summary>
+        </member>
+        <member name="M:CsharpHttpHelper.Base.HttphelperBase.GetHtml(CsharpHttpHelper.HttpItem)">
+            <summary>
+            根据相传入的数据，得到相应页面数据
+            </summary>
+            <param name="item">参数类对象</param>
+            <returns>返回HttpResult类型</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.Base.HttphelperBase.FastRequest(CsharpHttpHelper.HttpItem)">
+            <summary>
+            快速Post数据这个访求与GetHtml一样，只是不接收返回数据，只做提交。
+            </summary>
+            <param name="item">参数类对象</param>
+            <returns>返回HttpResult类型</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.Base.HttphelperBase.GetData(CsharpHttpHelper.HttpItem,CsharpHttpHelper.HttpResult)">
+            <summary>
+            获取数据的并解析的方法
+            </summary>
+            <param name="item"></param>
+            <param name="result"></param>
+        </member>
+        <member name="M:CsharpHttpHelper.Base.HttphelperBase.SetEncoding(CsharpHttpHelper.HttpItem,CsharpHttpHelper.HttpResult,System.Byte[])">
+            <summary>
+            设置编码
+            </summary>
+            <param name="item">HttpItem</param>
+            <param name="result">HttpResult</param>
+            <param name="ResponseByte">byte[]</param>
+        </member>
+        <member name="M:CsharpHttpHelper.Base.HttphelperBase.GetByte">
+            <summary>
+            提取网页Byte
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CsharpHttpHelper.Base.HttphelperBase.SetRequest(CsharpHttpHelper.HttpItem)">
+             <summary>
+             为请求准备参数
+             </summary>
+            <param name="item">参数列表</param>
+        </member>
+        <member name="M:CsharpHttpHelper.Base.HttphelperBase.SetCer(CsharpHttpHelper.HttpItem)">
+            <summary>
+            设置证书
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:CsharpHttpHelper.Base.HttphelperBase.SetCerList(CsharpHttpHelper.HttpItem)">
+            <summary>
+            设置多个证书
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:CsharpHttpHelper.Base.HttphelperBase.SetCookie(CsharpHttpHelper.HttpItem)">
+            <summary>
+            设置Cookie
+            </summary>
+            <param name="item">Http参数</param>
+        </member>
+        <member name="M:CsharpHttpHelper.Base.HttphelperBase.SetPostData(CsharpHttpHelper.HttpItem)">
+            <summary>
+            设置Post数据
+            </summary>
+            <param name="item">Http参数</param>
+        </member>
+        <member name="M:CsharpHttpHelper.Base.HttphelperBase.SetProxy(CsharpHttpHelper.HttpItem)">
+            <summary>
+            设置代理
+            </summary>
+            <param name="item">参数对象</param>
+        </member>
+        <member name="M:CsharpHttpHelper.Base.HttphelperBase.CheckValidationResult(System.Object,System.Security.Cryptography.X509Certificates.X509Certificate,System.Security.Cryptography.X509Certificates.X509Chain,System.Net.Security.SslPolicyErrors)">
+            <summary>
+            回调验证证书问题
+            </summary>
+            <param name="sender">流对象</param>
+            <param name="certificate">证书</param>
+            <param name="chain">X509Chain</param>
+            <param name="errors">SslPolicyErrors</param>
+            <returns>bool</returns>
+        </member>
+        <member name="T:CsharpHttpHelper.BaseBll.HttpHelperBll">
+            <summary>
+            具体实现方法  Copyright：http://www.httphelper.com/
+            </summary>
+        </member>
+        <member name="F:CsharpHttpHelper.BaseBll.HttpHelperBll.httpbase">
+            <summary>
+            Httphelper原始访问类对象
+            </summary>
+        </member>
+        <member name="M:CsharpHttpHelper.BaseBll.HttpHelperBll.GetHtml(CsharpHttpHelper.HttpItem)">
+            <summary>
+            根据相传入的数据，得到相应页面数据
+            </summary>
+            <param name="item">参数类对象</param>
+            <returns>返回HttpResult类型</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.BaseBll.HttpHelperBll.GetImage(CsharpHttpHelper.HttpItem)">
+            <summary>
+            根据Url获取图片
+            </summary>
+            <param name="item">参数类对象</param>
+            <returns>返回图片</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.BaseBll.HttpHelperBll.FastRequest(CsharpHttpHelper.HttpItem)">
+            <summary>
+            快速Post数据这个访求与GetHtml一样，只是不接收返回数据，只做提交。
+            </summary>
+            <param name="item">参数类对象</param>
+            <returns>返回HttpResult类型</returns>
+        </member>
+        <member name="T:CsharpHttpHelper.HttpItem">
+            <summary>
+            Http请求参考类  Copyright：http://www.httphelper.com/
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.URL">
+            <summary>
+            请求URL必须填写
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.Method">
+            <summary>
+            请求方式默认为GET方式,当为POST方式时必须设置Postdata的值
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.Timeout">
+            <summary>
+            默认请求超时时间
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.ReadWriteTimeout">
+            <summary>
+            默认写入Post数据超时间
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.Host">
+            <summary>
+            设置Host的标头信息
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.KeepAlive">
+            <summary>
+             获取或设置一个值，该值指示是否与 Internet 资源建立持久性连接默认为true。
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.Accept">
+            <summary>
+            请求标头值 默认为text/html, application/xhtml+xml, */*
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.ContentType">
+            <summary>
+            请求返回类型默认 text/html
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.UserAgent">
+            <summary>
+            客户端访问信息默认Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.Referer">
+            <summary>
+            来源地址，上次访问地址
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.ProtocolVersion">
+            <summary>
+              获取或设置用于请求的 HTTP 版本。返回结果:用于请求的 HTTP 版本。默认为 System.Net.HttpVersion.Version11。
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.Expect100Continue">
+            <summary>
+             获取或设置一个 System.Boolean 值，该值确定是否使用 100-Continue 行为。如果 POST 请求需要 100-Continue 响应，则为 true；否则为 false。默认值为 true。
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.MaximumAutomaticRedirections">
+            <summary>
+            设置请求将跟随的重定向的最大数目
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.IfModifiedSince">
+            <summary>
+            获取和设置IfModifiedSince，默认为当前日期和时间
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.Encoding">
+            <summary>
+            返回数据编码默认为NUll,可以自动识别,一般为utf-8,gbk,gb2312
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.PostEncoding">
+            <summary>
+            设置或获取Post参数编码,默认的为Default编码
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.PostDataType">
+            <summary>
+            Post的数据类型
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.Postdata">
+            <summary>
+            Post请求时要发送的字符串Post数据
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.PostdataByte">
+            <summary>
+            Post请求时要发送的Byte类型的Post数据
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.CookieCollection">
+            <summary>
+            Cookie对象集合
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.Cookie">
+            <summary>
+            请求时的Cookie
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.AutoRedirectCookie">
+            <summary>
+            请求时当设置allowautoredirect=true时是否自动处理Cookie
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.ResultCookieType">
+            <summary>
+            Cookie返回类型,默认的是只返回字符串类型
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.CerPath">
+            <summary>
+            证书绝对路径
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.CerPwd">
+            <summary>
+            证书密码
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.ClentCertificates">
+            <summary>
+            设置509证书集合
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.ICredentials">
+            <summary>
+            获取或设置请求的身份验证信息。
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.IsToLower">
+            <summary>
+            是否设置为全文小写，默认为不转化
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.Allowautoredirect">
+            <summary>
+            支持跳转页面，查询结果将是跳转后的页面，默认是不跳转
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.Connectionlimit">
+            <summary>
+            最大连接数
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.WebProxy">
+            <summary>
+            设置代理对象，不想使用IE默认配置就设置为Null，而且不要设置ProxyIp
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.ProxyUserName">
+            <summary>
+            代理Proxy 服务器用户名
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.ProxyPwd">
+            <summary>
+            代理 服务器密码
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.ProxyIp">
+            <summary>
+            代理 服务IP,如果要使用IE代理就设置为ieproxy
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.ResultType">
+            <summary>
+            设置返回类型String和Byte
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpItem.Header">
+            <summary>
+            header对象
+            </summary>
+        </member>
+        <member name="T:CsharpHttpHelper.HttpResult">
+            <summary>
+            Http返回参数类  Copyright：http://www.httphelper.com/
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpResult.Cookie">
+            <summary>
+            Http请求返回的Cookie
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpResult.CookieCollection">
+            <summary>
+            Cookie对象集合
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpResult.Html">
+            <summary>
+            返回的String类型数据 只有ResultType.String时才返回数据，其它情况为空
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpResult.ResultByte">
+            <summary>
+            返回的Byte数组 只有ResultType.Byte时才返回数据，其它情况为空
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpResult.Header">
+            <summary>
+            header对象
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpResult.StatusDescription">
+            <summary>
+            返回状态说明
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpResult.StatusCode">
+            <summary>
+            返回状态码,默认为OK
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpResult.ResponseUri">
+            <summary>
+            最后访问的URl
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.HttpResult.RedirectUrl">
+            <summary>
+            获取重定向的URl
+            </summary>
+        </member>
+        <member name="T:CsharpHttpHelper.Helper.HttpUrlHelper">
+            <summary>
+            和Url相关的帮助方法  Copyright：http://www.httphelper.com/
+            </summary>
+        </member>
+        <member name="M:CsharpHttpHelper.Helper.HttpUrlHelper.URLDecode(System.String,System.Text.Encoding)">
+            <summary>
+            使用指定的编码对象将 URL 编码的字符串转换为已解码的字符串。
+            </summary>
+            <param name="text">指定的字符串</param>
+            <param name="encoding">指定编码默认为Default</param>
+            <returns></returns>
+        </member>
+        <member name="M:CsharpHttpHelper.Helper.HttpUrlHelper.URLEncode(System.String,System.Text.Encoding)">
+            <summary>
+            使用指定的编码对象对 URL 字符串进行编码。
+            </summary>
+            <param name="text">指定的字符串</param>
+            <param name="encoding">指定编码默认为Default</param>
+            <returns></returns>
+        </member>
+        <member name="M:CsharpHttpHelper.Helper.HttpUrlHelper.GetNameValueCollection(System.String)">
+            <summary>
+            将Url参数字符串转为一个Key和Value的集合
+            </summary>
+            <param name="str">要转为集合的字符串</param>
+            <returns>NameValueCollection</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.Helper.HttpUrlHelper.GetUrlHost(System.String)">
+            <summary>
+            提取网站主机部分就是host
+            </summary>
+            <param name="url">url</param>
+            <returns>host</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.Helper.HttpUrlHelper.GetUrlIp(System.String)">
+            <summary>
+            提取网址对应的IP地址
+            </summary>
+            <param name="url">url</param>
+            <returns>返回Url对应的IP地址</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.Helper.HttpUrlHelper.getNowURL(System.Int32)">
+            <summary>
+            获取当前页面的URL（五个数字可选 1~5 ）
+            </summary>
+            <param name="selectNO">1完整url,2域名之后,3域名之后不含参数,4只有域名,5获取参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:CsharpHttpHelper.Helper.ImageHelper.ByteToImage(System.Byte[])">
+            <summary>
+            将字节数组转为图片
+            </summary>
+            <param name=" b">字节数组</param>
+            <returns>返回图片</returns>
+        </member>
+        <member name="T:CsharpHttpHelper.Item.ImgItem">
+            <summary>
+            图片对象  Copyright：http://www.httphelper.com/
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.Item.ImgItem.Src">
+            <summary>
+            图片网址
+            </summary>
+        </member>
+        <member name="P:CsharpHttpHelper.Item.ImgItem.Html">
+            <summary>
+            图片标签Html
+            </summary>
+        </member>
+        <member name="T:CsharpHttpHelper.Helper.JsonHelper">
+            <summary>
+            Json操作对象  Copyright：http://www.httphelper.com/
+            </summary>
+        </member>
+        <member name="M:CsharpHttpHelper.Helper.JsonHelper.JsonToObject``1(System.String)">
+            <summary>
+            将指定的Json字符串转为指定的T类型对象 
+            </summary>
+            <param name="jsonstr">字符串</param>
+            <returns>转换后的对象，失败为Null</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.Helper.JsonHelper.ObjectToJson(System.Object)">
+            <summary>
+            将指定的对象转为Json字符串
+            </summary>
+            <param name="obj">对象</param>
+            <returns>转换后的字符串失败为空字符串</returns>
+        </member>
+        <member name="T:CsharpHttpHelper.Helper.MD5Helper">
+            <summary>
+            md5操作相关  Copyright：http://www.httphelper.com/
+            </summary>
+        </member>
+        <member name="M:CsharpHttpHelper.Helper.MD5Helper.ToMD5_32(System.String)">
+            <summary>
+            传入明文，返回用MD5加密后的字符串
+            </summary>
+            <param name="str">要加密的字符串</param>
+            <returns>MD5加密后的字符串</returns>
+        </member>
+        <member name="M:CsharpHttpHelper.Helper.MD5Helper.ToSHA1(System.String)">
+            <summary>
+            传入明文，返回用SHA1密后的字符串
+            </summary>
+            <param name="str">要加密的字符串</param>
+            <returns>SHA1加密后的字符串</returns>
+        </member>
+        <member name="T:CsharpHttpHelper.Enum.PostDataType">
+            <summary>
+            Post的数据格式默认为string  Copyright：http://www.httphelper.com/
+            </summary>
+        </member>
+        <member name="F:CsharpHttpHelper.Enum.PostDataType.String">
+            <summary>
+            字符串类型，这时编码Encoding可不设置
+            </summary>
+        </member>
+        <member name="F:CsharpHttpHelper.Enum.PostDataType.Byte">
+            <summary>
+            Byte类型，需要设置PostdataByte参数的值编码Encoding可设置为空
+            </summary>
+        </member>
+        <member name="F:CsharpHttpHelper.Enum.PostDataType.FilePath">
+            <summary>
+            传文件，Postdata必须设置为文件的绝对路径，必须设置Encoding的值
+            </summary>
+        </member>
+        <member name="T:CsharpHttpHelper.Static.RegexString">
+            <summary>
+            正则表达式静态类
+            </summary>
+        </member>
+        <member name="F:CsharpHttpHelper.Static.RegexString.Alist">
+            <summary>
+            获取所有的A链接
+            </summary>
+        </member>
+        <member name="F:CsharpHttpHelper.Static.RegexString.ImgList">
+            <summary>
+            获取所有的Img标签
+            </summary>
+        </member>
+        <member name="F:CsharpHttpHelper.Static.RegexString.Nscript">
+            <summary>
+            所有的Nscript
+            </summary>
+        </member>
+        <member name="F:CsharpHttpHelper.Static.RegexString.Style">
+            <summary>
+            所有的Style
+            </summary>
+        </member>
+        <member name="F:CsharpHttpHelper.Static.RegexString.Script">
+            <summary>
+            所有的Script
+            </summary>
+        </member>
+        <member name="F:CsharpHttpHelper.Static.RegexString.Html">
+            <summary>
+            所有的Html
+            </summary>
+        </member>
+        <member name="F:CsharpHttpHelper.Static.RegexString.NewLine">
+            <summary>
+            换行符号
+            </summary>
+        </member>
+        <member name="F:CsharpHttpHelper.Static.RegexString.Enconding">
+             <summary>
+            获取网页编码
+             </summary>
+        </member>
+        <member name="F:CsharpHttpHelper.Static.RegexString.AllHtml">
+            <summary>
+            所有Html
+            </summary>
+        </member>
+        <member name="F:CsharpHttpHelper.Static.RegexString.HtmlTitle">
+            <summary>
+            title
+            </summary>
+        </member>
+        <member name="T:CsharpHttpHelper.Enum.ResultCookieType">
+            <summary>
+            Cookie返回类型  Copyright：http://www.httphelper.com/
+            </summary>
+        </member>
+        <member name="F:CsharpHttpHelper.Enum.ResultCookieType.String">
+            <summary>
+            只返回字符串类型的Cookie
+            </summary>
+        </member>
+        <member name="F:CsharpHttpHelper.Enum.ResultCookieType.CookieCollection">
+            <summary>
+            CookieCollection格式的Cookie集合同时也返回String类型的cookie
+            </summary>
+        </member>
+        <member name="T:CsharpHttpHelper.Enum.ResultType">
+            <summary>
+            返回类型  Copyright：http://www.httphelper.com/
+            </summary>
+        </member>
+        <member name="F:CsharpHttpHelper.Enum.ResultType.String">
+            <summary>
+            表示只返回字符串 只有Html有数据
+            </summary>
+        </member>
+        <member name="F:CsharpHttpHelper.Enum.ResultType.Byte">
+            <summary>
+            表示返回字符串和字节流 ResultByte和Html都有数据返回
+            </summary>
+        </member>
+        <member name="T:DTTOOLS.IOHepler.IOHepler">
+            <summary>
+            IO操作类
+            </summary>
+        </member>
+        <member name="M:DTTOOLS.IOHepler.IOHepler.DeleteDirectorys(System.String)">
+            <summary>
+            删除指定目录下的所有目录
+            </summary>
+            <param name="path">目标目录</param>
+            <returns></returns>
+        </member>
+        <member name="T:DTTOOLS.Md5Tool.MD5Helper">
+            <summary>
+            MD5生成解密
+            </summary>
+        </member>
+        <member name="M:DTTOOLS.Md5Tool.MD5Helper.Md5Encrypt(System.String,System.String)">
+            <summary>
+            MD5加密函数
+            </summary>
+            <param name="pToEncrypt">加密字符串</param>
+            <param name="sKey">加密key</param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.Md5Tool.MD5Helper.Md5Decrypt(System.String,System.String)">
+            <summary>
+            MD5解密
+            </summary>
+            <param name="pToDecrypt">解密字符串</param>
+            <param name="sKey">解密key</param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.Md5Tool.MD5Helper.GenerateKey">
+            <summary>
+            加密key
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.Print.IDTPrint.Print(System.Drawing.Bitmap,System.Boolean)">
+            <summary>
+            打印
+            </summary>
+            <param name="image">图像流</param>
+            <param name="isCut">是否裁切</param>
+        </member>
+        <member name="M:DTTOOLS.Print.IDTPrint.PrintView(System.Drawing.Bitmap,System.Boolean)">
+            <summary>
+            打印预览
+            </summary>
+        </member>
+        <member name="M:DTTOOLS.Print.IDTPrint.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="P:DTTOOLS.Print.IDTPrint.DocumentPrint">
+            <summary>
+            默认打印机
+            </summary>
+        </member>
+        <member name="T:DTTOOLS.Print.PrintTools">
+            <summary>
+            打印工具类
+            </summary>
+        </member>
+        <member name="M:DTTOOLS.Print.PrintTools.GetPrintDirName(System.String)">
+            <summary>
+            获取打印机驱动名称
+            </summary>
+            <param name="printname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.Print.PrintTools.GetLocalPrinters">
+            <summary>   
+            获取本机的打印机列表。   
+            </summary>   
+        </member>
+        <member name="M:DTTOOLS.Print.PrintTools.GetPrintPageType(System.Drawing.Printing.PrintDocument)">
+            <summary>
+            返回所有可用纸张类型
+            </summary>
+            <returns>PaperSizes</returns>
+        </member>
+        <member name="M:DTTOOLS.Print.PrintTools.GetPrinterStat(System.String)">
+            enum PrinterStatus  {   其他状态= 1,  未知,  空闲,  正在打印,  预热,  停止打印,  打印中,  离线 }
+             <summary>
+             获取打印机是否脱机
+             </summary>
+             <param name="printerDevice">打印机名称</param>
+             <returns>状态</returns>
+        </member>
+        <member name="M:DTTOOLS.Print.PrintTools.SettingDefaultPrinter(System.String)">
+            <summary>
+            设置默认打印机
+            </summary>
+            <param name="name">打印机名称</param>
+            <returns></returns>
+        </member>
+        <member name="T:DTTOOLS.SqlHelper">
+            <summary> 
+            SqlServer数据访问帮助类 
+            </summary> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.AttachParameters(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlParameter[])">
+            <summary> 
+            将SqlParameter参数数组(参数值)分配给SqlCommand命令. 
+            这个方法将给任何一个参数分配DBNull.Value; 
+            该操作将阻止默认值的使用. 
+            </summary> 
+            <param name="command">命令名</param> 
+            <param name="commandParameters">SqlParameters数组</param> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.AssignParameterValues(System.Data.SqlClient.SqlParameter[],System.Data.DataRow)">
+            <summary> 
+            将DataRow类型的列值分配到SqlParameter参数数组. 
+            </summary> 
+            <param name="commandParameters">要分配值的SqlParameter参数数组</param> 
+            <param name="dataRow">将要分配给存储过程参数的DataRow</param> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.AssignParameterValues(System.Data.SqlClient.SqlParameter[],System.Object[])">
+            <summary> 
+            将一个对象数组分配给SqlParameter参数数组. 
+            </summary> 
+            <param name="commandParameters">要分配值的SqlParameter参数数组</param> 
+            <param name="parameterValues">将要分配给存储过程参数的对象数组</param> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.PrepareCommand(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[],System.Boolean@)">
+            <summary> 
+            预处理用户提供的命令,数据库连接/事务/命令类型/参数 
+            </summary> 
+            <param name="command">要处理的SqlCommand</param> 
+            <param name="connection">数据库连接</param> 
+            <param name="transaction">一个有效的事务或者是null值</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本, 其它.)</param> 
+            <param name="commandText">存储过程名或都T-SQL命令文本</param> 
+            <param name="commandParameters">和命令相关联的SqlParameter参数数组,如果没有参数为'null'</param> 
+            <param name="mustCloseConnection"><c>true</c> 如果连接是打开的,则为true,其它情况下为false.</param> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.GetConnSting">
+            <summary> 
+            一个有效的数据库连接字符串 
+            </summary> 
+            <returns></returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.GetConnection">
+            <summary> 
+            一个有效的数据库连接对象 
+            </summary> 
+            <returns></returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteNonQuery(System.String,System.Data.CommandType,System.String)">
+            <summary> 
+            执行指定连接字符串,类型的SqlCommand. 
+            </summary> 
+            <remarks> 
+            示例:  
+             int result = ExecuteNonQuery(connString, CommandType.StoredProcedure, "PublishOrders"); 
+            </remarks> 
+            <param name="connectionString">一个有效的数据库连接字符串</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本, 其它.)</param> 
+            <param name="commandText">存储过程名称或SQL语句</param> 
+            <returns>返回命令影响的行数</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteNonQuery(System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary> 
+            执行指定连接字符串,类型的SqlCommand.如果没有提供参数,不返回结果. 
+            </summary> 
+            <remarks> 
+            示例:  
+             int result = ExecuteNonQuery(connString, CommandType.StoredProcedure, "PublishOrders", new SqlParameter("@prodid", 24)); 
+            </remarks> 
+            <param name="connectionString">一个有效的数据库连接字符串</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本, 其它.)</param> 
+            <param name="commandText">存储过程名称或SQL语句</param> 
+            <param name="commandParameters">SqlParameter参数数组</param> 
+            <returns>返回命令影响的行数</returns> 
+        </member>
+        <!-- 对于成员“M:DTTOOLS.SqlHelper.ExecuteNonQuery(System.String,System.String,System.Object[])”忽略有格式错误的 XML 注释 -->
+        <member name="M:DTTOOLS.SqlHelper.ExecuteNonQuery(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String)">
+            <summary> 
+            执行指定数据库连接对象的命令 
+            </summary> 
+            <remarks> 
+            示例:  
+             int result = ExecuteNonQuery(conn, CommandType.StoredProcedure, "PublishOrders"); 
+            </remarks> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="commandType">命令类型(存储过程,命令文本或其它.)</param> 
+            <param name="commandText">存储过程名称或T-SQL语句</param> 
+            <returns>返回影响的行数</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteNonQuery(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary> 
+            执行指定数据库连接对象的命令 
+            </summary> 
+            <remarks> 
+            示例:  
+             int result = ExecuteNonQuery(conn, CommandType.StoredProcedure, "PublishOrders", new SqlParameter("@prodid", 24)); 
+            </remarks> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="commandType">命令类型(存储过程,命令文本或其它.)</param> 
+            <param name="commandText">T存储过程名称或T-SQL语句</param> 
+            <param name="commandParameters">SqlParamter参数数组</param> 
+            <returns>返回影响的行数</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteNonQuery(System.Data.SqlClient.SqlConnection,System.String,System.Object[])">
+            <summary> 
+            执行指定数据库连接对象的命令,将对象数组的值赋给存储过程参数. 
+            </summary> 
+            <remarks> 
+            此方法不提供访问存储过程输出参数和返回值 
+            示例:  
+             int result = ExecuteNonQuery(conn, "PublishOrders", 24, 36); 
+            </remarks> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="spName">存储过程名</param> 
+            <param name="parameterValues">分配给存储过程输入参数的对象数组</param> 
+            <returns>返回影响的行数</returns> 
+        </member>
+        <!-- 对于成员“M:DTTOOLS.SqlHelper.ExecuteNonQuery(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:DTTOOLS.SqlHelper.ExecuteNonQuery(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary> 
+            执行带事务的SqlCommand(指定参数). 
+            </summary> 
+            <remarks> 
+            示例:  
+             int result = ExecuteNonQuery(trans, CommandType.StoredProcedure, "GetOrders", new SqlParameter("@prodid", 24)); 
+            </remarks> 
+            <param name="transaction">一个有效的数据库连接对象</param> 
+            <param name="commandType">命令类型(存储过程,命令文本或其它.)</param> 
+            <param name="commandText">存储过程名称或T-SQL语句</param> 
+            <param name="commandParameters">SqlParamter参数数组</param> 
+            <returns>返回影响的行数</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteNonQuery(System.Data.SqlClient.SqlTransaction,System.String,System.Object[])">
+            <summary> 
+            执行带事务的SqlCommand(指定参数值). 
+            </summary> 
+            <remarks> 
+            此方法不提供访问存储过程输出参数和返回值 
+            示例:  
+             int result = ExecuteNonQuery(conn, trans, "PublishOrders", 24, 36); 
+            </remarks> 
+            <param name="transaction">一个有效的数据库连接对象</param> 
+            <param name="spName">存储过程名</param> 
+            <param name="parameterValues">分配给存储过程输入参数的对象数组</param> 
+            <returns>返回受影响的行数</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteDataset(System.String,System.Data.CommandType,System.String)">
+            <summary> 
+            执行指定数据库连接字符串的命令,返回DataSet. 
+            </summary> 
+            <remarks> 
+            示例:  
+             DataSet ds = ExecuteDataset(connString, CommandType.StoredProcedure, "GetOrders"); 
+            </remarks> 
+            <param name="connectionString">一个有效的数据库连接字符串</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名称或T-SQL语句</param> 
+            <returns>返回一个包含结果集的DataSet</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteDataset(System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary> 
+            执行指定数据库连接字符串的命令,返回DataSet. 
+            </summary> 
+            <remarks> 
+            示例: 
+             DataSet ds = ExecuteDataset(connString, CommandType.StoredProcedure, "GetOrders", new SqlParameter("@prodid", 24)); 
+            </remarks> 
+            <param name="connectionString">一个有效的数据库连接字符串</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名称或T-SQL语句</param> 
+            <param name="commandParameters">SqlParamters参数数组</param> 
+            <returns>返回一个包含结果集的DataSet</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteDataset(System.String,System.String,System.Object[])">
+            <summary> 
+            执行指定数据库连接字符串的命令,直接提供参数值,返回DataSet. 
+            </summary> 
+            <remarks> 
+            此方法不提供访问存储过程输出参数和返回值. 
+            示例: 
+             DataSet ds = ExecuteDataset(connString, "GetOrders", 24, 36); 
+            </remarks> 
+            <param name="connectionString">一个有效的数据库连接字符串</param> 
+            <param name="spName">存储过程名</param> 
+            <param name="parameterValues">分配给存储过程输入参数的对象数组</param> 
+            <returns>返回一个包含结果集的DataSet</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteDataset(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String)">
+            <summary> 
+            执行指定数据库连接对象的命令,返回DataSet. 
+            </summary> 
+            <remarks> 
+            示例:  
+             DataSet ds = ExecuteDataset(conn, CommandType.StoredProcedure, "GetOrders"); 
+            </remarks> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名或T-SQL语句</param> 
+            <returns>返回一个包含结果集的DataSet</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteDataset(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary> 
+            执行指定数据库连接对象的命令,指定存储过程参数,返回DataSet. 
+            </summary> 
+            <remarks> 
+            示例:  
+             DataSet ds = ExecuteDataset(conn, CommandType.StoredProcedure, "GetOrders", new SqlParameter("@prodid", 24)); 
+            </remarks> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名或T-SQL语句</param> 
+            <param name="commandParameters">SqlParamter参数数组</param> 
+            <returns>返回一个包含结果集的DataSet</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteDataset(System.Data.SqlClient.SqlConnection,System.String,System.Object[])">
+            <summary> 
+            执行指定数据库连接对象的命令,指定参数值,返回DataSet. 
+            </summary> 
+            <remarks> 
+            此方法不提供访问存储过程输入参数和返回值. 
+            示例.:  
+             DataSet ds = ExecuteDataset(conn, "GetOrders", 24, 36); 
+            </remarks> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="spName">存储过程名</param> 
+            <param name="parameterValues">分配给存储过程输入参数的对象数组</param> 
+            <returns>返回一个包含结果集的DataSet</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteDataset(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String)">
+            <summary> 
+            执行指定事务的命令,返回DataSet. 
+            </summary> 
+            <remarks> 
+            示例:  
+             DataSet ds = ExecuteDataset(trans, CommandType.StoredProcedure, "GetOrders"); 
+            </remarks> 
+            <param name="transaction">事务</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名或T-SQL语句</param> 
+            <returns>返回一个包含结果集的DataSet</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteDataset(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary> 
+            执行指定事务的命令,指定参数,返回DataSet. 
+            </summary> 
+            <remarks> 
+            示例:  
+             DataSet ds = ExecuteDataset(trans, CommandType.StoredProcedure, "GetOrders", new SqlParameter("@prodid", 24)); 
+            </remarks> 
+            <param name="transaction">事务</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名或T-SQL语句</param> 
+            <param name="commandParameters">SqlParamter参数数组</param> 
+            <returns>返回一个包含结果集的DataSet</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteDataset(System.Data.SqlClient.SqlTransaction,System.String,System.Object[])">
+            <summary> 
+            执行指定事务的命令,指定参数值,返回DataSet. 
+            </summary> 
+            <remarks> 
+            此方法不提供访问存储过程输入参数和返回值. 
+            示例.:  
+             DataSet ds = ExecuteDataset(trans, "GetOrders", 24, 36); 
+            </remarks> 
+            <param name="transaction">事务</param> 
+            <param name="spName">存储过程名</param> 
+            <param name="parameterValues">分配给存储过程输入参数的对象数组</param> 
+            <returns>返回一个包含结果集的DataSet</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteReader(System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[],DTTOOLS.SqlHelper.SqlConnectionOwnership)">
+            <summary> 
+            执行指定数据库连接对象的数据阅读器. 
+            </summary> 
+            <remarks> 
+            如果是SqlHelper打开连接,当连接关闭DataReader也将关闭. 
+            如果是调用都打开连接,DataReader由调用都管理. 
+            </remarks> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="transaction">一个有效的事务,或者为 'null'</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名或T-SQL语句</param> 
+            <param name="commandParameters">SqlParameters参数数组,如果没有参数则为'null'</param> 
+            <param name="connectionOwnership">标识数据库连接对象是由调用者提供还是由SqlHelper提供</param> 
+            <returns>返回包含结果集的SqlDataReader</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteReader(System.String,System.Data.CommandType,System.String)">
+            <summary> 
+            执行指定数据库连接字符串的数据阅读器. 
+            </summary> 
+            <remarks> 
+            示例:  
+             SqlDataReader dr = ExecuteReader(connString, CommandType.StoredProcedure, "GetOrders"); 
+            </remarks> 
+            <param name="connectionString">一个有效的数据库连接字符串</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名或T-SQL语句</param> 
+            <returns>返回包含结果集的SqlDataReader</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteReader(System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary> 
+            执行指定数据库连接字符串的数据阅读器,指定参数. 
+            </summary> 
+            <remarks> 
+            示例:  
+             SqlDataReader dr = ExecuteReader(connString, CommandType.StoredProcedure, "GetOrders", new SqlParameter("@prodid", 24)); 
+            </remarks> 
+            <param name="connectionString">一个有效的数据库连接字符串</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名或T-SQL语句</param> 
+            <param name="commandParameters">SqlParamter参数数组(new SqlParameter("@prodid", 24))</param> 
+            <returns>返回包含结果集的SqlDataReader</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteReader(System.String,System.String,System.Object[])">
+            <summary> 
+            执行指定数据库连接字符串的数据阅读器,指定参数值. 
+            </summary> 
+            <remarks> 
+            此方法不提供访问存储过程输出参数和返回值参数. 
+            示例:  
+             SqlDataReader dr = ExecuteReader(connString, "GetOrders", 24, 36); 
+            </remarks> 
+            <param name="connectionString">一个有效的数据库连接字符串</param> 
+            <param name="spName">存储过程名</param> 
+            <param name="parameterValues">分配给存储过程输入参数的对象数组</param> 
+            <returns>返回包含结果集的SqlDataReader</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteReader(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String)">
+            <summary> 
+            执行指定数据库连接对象的数据阅读器. 
+            </summary> 
+            <remarks> 
+            示例:  
+             SqlDataReader dr = ExecuteReader(conn, CommandType.StoredProcedure, "GetOrders"); 
+            </remarks> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名或T-SQL语句</param> 
+            <returns>返回包含结果集的SqlDataReader</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteReader(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary> 
+            [调用者方式]执行指定数据库连接对象的数据阅读器,指定参数. 
+            </summary> 
+            <remarks> 
+            示例:  
+             SqlDataReader dr = ExecuteReader(conn, CommandType.StoredProcedure, "GetOrders", new SqlParameter("@prodid", 24)); 
+            </remarks> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandParameters">SqlParamter参数数组</param> 
+            <returns>返回包含结果集的SqlDataReader</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteReader(System.Data.SqlClient.SqlConnection,System.String,System.Object[])">
+            <summary> 
+            [调用者方式]执行指定数据库连接对象的数据阅读器,指定参数值. 
+            </summary> 
+            <remarks> 
+            此方法不提供访问存储过程输出参数和返回值参数. 
+            示例:  
+             SqlDataReader dr = ExecuteReader(conn, "GetOrders", 24, 36); 
+            </remarks> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="spName">T存储过程名</param> 
+            <param name="parameterValues">分配给存储过程输入参数的对象数组</param> 
+            <returns>返回包含结果集的SqlDataReader</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteReader(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String)">
+            <summary> 
+            [调用者方式]执行指定数据库事务的数据阅读器,指定参数值. 
+            </summary> 
+            <remarks> 
+            示例:  
+             SqlDataReader dr = ExecuteReader(trans, CommandType.StoredProcedure, "GetOrders"); 
+            </remarks> 
+            <param name="transaction">一个有效的连接事务</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名称或T-SQL语句</param> 
+            <returns>返回包含结果集的SqlDataReader</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteReader(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary> 
+            [调用者方式]执行指定数据库事务的数据阅读器,指定参数. 
+            </summary> 
+            <remarks> 
+            示例:  
+              SqlDataReader dr = ExecuteReader(trans, CommandType.StoredProcedure, "GetOrders", new SqlParameter("@prodid", 24)); 
+            </remarks> 
+            <param name="transaction">一个有效的连接事务</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名称或T-SQL语句</param> 
+            <param name="commandParameters">分配给命令的SqlParamter参数数组</param> 
+            <returns>返回包含结果集的SqlDataReader</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteReader(System.Data.SqlClient.SqlTransaction,System.String,System.Object[])">
+            <summary> 
+            [调用者方式]执行指定数据库事务的数据阅读器,指定参数值. 
+            </summary> 
+            <remarks> 
+            此方法不提供访问存储过程输出参数和返回值参数. 
+            
+            示例:  
+             SqlDataReader dr = ExecuteReader(trans, "GetOrders", 24, 36); 
+            </remarks> 
+            <param name="transaction">一个有效的连接事务</param> 
+            <param name="spName">存储过程名称</param> 
+            <param name="parameterValues">分配给存储过程输入参数的对象数组</param> 
+            <returns>返回包含结果集的SqlDataReader</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteScalar(System.String,System.Data.CommandType,System.String)">
+            <summary> 
+            执行指定数据库连接字符串的命令,返回结果集中的第一行第一列. 
+            </summary> 
+            <remarks> 
+            示例:  
+             int orderCount = (int)ExecuteScalar(connString, CommandType.StoredProcedure, "GetOrderCount"); 
+            </remarks> 
+            <param name="connectionString">一个有效的数据库连接字符串</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名称或T-SQL语句</param> 
+            <returns>返回结果集中的第一行第一列</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteScalar(System.String,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary> 
+            执行指定数据库连接字符串的命令,指定参数,返回结果集中的第一行第一列. 
+            </summary> 
+            <remarks> 
+            示例:  
+             int orderCount = (int)ExecuteScalar(connString, CommandType.StoredProcedure, "GetOrderCount", new SqlParameter("@prodid", 24)); 
+            </remarks> 
+            <param name="connectionString">一个有效的数据库连接字符串</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名称或T-SQL语句</param> 
+            <param name="commandParameters">分配给命令的SqlParamter参数数组</param> 
+            <returns>返回结果集中的第一行第一列</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteScalar(System.String,System.String,System.Object[])">
+            <summary> 
+            执行指定数据库连接字符串的命令,指定参数值,返回结果集中的第一行第一列. 
+            </summary> 
+            <remarks> 
+            此方法不提供访问存储过程输出参数和返回值参数. 
+            
+            示例:  
+             int orderCount = (int)ExecuteScalar(connString, "GetOrderCount", 24, 36); 
+            </remarks> 
+            <param name="connectionString">一个有效的数据库连接字符串</param> 
+            <param name="spName">存储过程名称</param> 
+            <param name="parameterValues">分配给存储过程输入参数的对象数组</param> 
+            <returns>返回结果集中的第一行第一列</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteScalar(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String)">
+            <summary> 
+            执行指定数据库连接对象的命令,返回结果集中的第一行第一列. 
+            </summary> 
+            <remarks> 
+            示例:  
+             int orderCount = (int)ExecuteScalar(conn, CommandType.StoredProcedure, "GetOrderCount"); 
+            </remarks> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名称或T-SQL语句</param> 
+            <returns>返回结果集中的第一行第一列</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteScalar(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary> 
+            执行指定数据库连接对象的命令,指定参数,返回结果集中的第一行第一列. 
+            </summary> 
+            <remarks> 
+            示例:  
+             int orderCount = (int)ExecuteScalar(conn, CommandType.StoredProcedure, "GetOrderCount", new SqlParameter("@prodid", 24)); 
+            </remarks> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名称或T-SQL语句</param> 
+            <param name="commandParameters">分配给命令的SqlParamter参数数组</param> 
+            <returns>返回结果集中的第一行第一列</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteScalar(System.Data.SqlClient.SqlConnection,System.String,System.Object[])">
+            <summary> 
+            执行指定数据库连接对象的命令,指定参数值,返回结果集中的第一行第一列. 
+            </summary> 
+            <remarks> 
+            此方法不提供访问存储过程输出参数和返回值参数. 
+            
+            示例:  
+             int orderCount = (int)ExecuteScalar(conn, "GetOrderCount", 24, 36); 
+            </remarks> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="spName">存储过程名称</param> 
+            <param name="parameterValues">分配给存储过程输入参数的对象数组</param> 
+            <returns>返回结果集中的第一行第一列</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteScalar(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String)">
+            <summary> 
+            执行指定数据库事务的命令,返回结果集中的第一行第一列. 
+            </summary> 
+            <remarks> 
+            示例:  
+             int orderCount = (int)ExecuteScalar(trans, CommandType.StoredProcedure, "GetOrderCount"); 
+            </remarks> 
+            <param name="transaction">一个有效的连接事务</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名称或T-SQL语句</param> 
+            <returns>返回结果集中的第一行第一列</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteScalar(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary> 
+            执行指定数据库事务的命令,指定参数,返回结果集中的第一行第一列. 
+            </summary> 
+            <remarks> 
+            示例:  
+             int orderCount = (int)ExecuteScalar(trans, CommandType.StoredProcedure, "GetOrderCount", new SqlParameter("@prodid", 24)); 
+            </remarks> 
+            <param name="transaction">一个有效的连接事务</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名称或T-SQL语句</param> 
+            <param name="commandParameters">分配给命令的SqlParamter参数数组</param> 
+            <returns>返回结果集中的第一行第一列</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteScalar(System.Data.SqlClient.SqlTransaction,System.String,System.Object[])">
+            <summary> 
+            执行指定数据库事务的命令,指定参数值,返回结果集中的第一行第一列. 
+            </summary> 
+            <remarks> 
+            此方法不提供访问存储过程输出参数和返回值参数. 
+            
+            示例:  
+             int orderCount = (int)ExecuteScalar(trans, "GetOrderCount", 24, 36); 
+            </remarks> 
+            <param name="transaction">一个有效的连接事务</param> 
+            <param name="spName">存储过程名称</param> 
+            <param name="parameterValues">分配给存储过程输入参数的对象数组</param> 
+            <returns>返回结果集中的第一行第一列</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteXmlReader(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String)">
+            <summary> 
+            执行指定数据库连接对象的SqlCommand命令,并产生一个XmlReader对象做为结果集返回. 
+            </summary> 
+            <remarks> 
+            示例:  
+             XmlReader r = ExecuteXmlReader(conn, CommandType.StoredProcedure, "GetOrders"); 
+            </remarks> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名称或T-SQL语句 using "FOR XML AUTO"</param> 
+            <returns>返回XmlReader结果集对象.</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteXmlReader(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary> 
+            执行指定数据库连接对象的SqlCommand命令,并产生一个XmlReader对象做为结果集返回,指定参数. 
+            </summary> 
+            <remarks> 
+            示例:  
+             XmlReader r = ExecuteXmlReader(conn, CommandType.StoredProcedure, "GetOrders", new SqlParameter("@prodid", 24)); 
+            </remarks> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名称或T-SQL语句 using "FOR XML AUTO"</param> 
+            <param name="commandParameters">分配给命令的SqlParamter参数数组</param> 
+            <returns>返回XmlReader结果集对象.</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteXmlReader(System.Data.SqlClient.SqlConnection,System.String,System.Object[])">
+            <summary> 
+            执行指定数据库连接对象的SqlCommand命令,并产生一个XmlReader对象做为结果集返回,指定参数值. 
+            </summary> 
+            <remarks> 
+            此方法不提供访问存储过程输出参数和返回值参数. 
+            
+            示例:  
+             XmlReader r = ExecuteXmlReader(conn, "GetOrders", 24, 36); 
+            </remarks> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="spName">存储过程名称 using "FOR XML AUTO"</param> 
+            <param name="parameterValues">分配给存储过程输入参数的对象数组</param> 
+            <returns>返回XmlReader结果集对象.</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteXmlReader(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String)">
+            <summary> 
+            执行指定数据库事务的SqlCommand命令,并产生一个XmlReader对象做为结果集返回. 
+            </summary> 
+            <remarks> 
+            示例:  
+             XmlReader r = ExecuteXmlReader(trans, CommandType.StoredProcedure, "GetOrders"); 
+            </remarks> 
+            <param name="transaction">一个有效的连接事务</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名称或T-SQL语句 using "FOR XML AUTO"</param> 
+            <returns>返回XmlReader结果集对象.</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteXmlReader(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary> 
+            执行指定数据库事务的SqlCommand命令,并产生一个XmlReader对象做为结果集返回,指定参数. 
+            </summary> 
+            <remarks> 
+            示例:  
+             XmlReader r = ExecuteXmlReader(trans, CommandType.StoredProcedure, "GetOrders", new SqlParameter("@prodid", 24)); 
+            </remarks> 
+            <param name="transaction">一个有效的连接事务</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名称或T-SQL语句 using "FOR XML AUTO"</param> 
+            <param name="commandParameters">分配给命令的SqlParamter参数数组</param> 
+            <returns>返回XmlReader结果集对象.</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteXmlReader(System.Data.SqlClient.SqlTransaction,System.String,System.Object[])">
+            <summary> 
+            执行指定数据库事务的SqlCommand命令,并产生一个XmlReader对象做为结果集返回,指定参数值. 
+            </summary> 
+            <remarks> 
+            此方法不提供访问存储过程输出参数和返回值参数. 
+            
+            示例:  
+             XmlReader r = ExecuteXmlReader(trans, "GetOrders", 24, 36); 
+            </remarks> 
+            <param name="transaction">一个有效的连接事务</param> 
+            <param name="spName">存储过程名称</param> 
+            <param name="parameterValues">分配给存储过程输入参数的对象数组</param> 
+            <returns>返回一个包含结果集的DataSet.</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.FillDataset(System.String,System.Data.CommandType,System.String,System.Data.DataSet,System.String[])">
+            <summary> 
+            执行指定数据库连接字符串的命令,映射数据表并填充数据集. 
+            </summary> 
+            <remarks> 
+            示例:  
+             FillDataset(connString, CommandType.StoredProcedure, "GetOrders", ds, new string[] {"orders"}); 
+            </remarks> 
+            <param name="connectionString">一个有效的数据库连接字符串</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名称或T-SQL语句</param> 
+            <param name="dataSet">要填充结果集的DataSet实例</param> 
+            <param name="tableNames">表映射的数据表数组 
+            用户定义的表名 (可有是实际的表名.)</param> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.FillDataset(System.String,System.Data.CommandType,System.String,System.Data.DataSet,System.String[],System.Data.SqlClient.SqlParameter[])">
+            <summary> 
+            执行指定数据库连接字符串的命令,映射数据表并填充数据集.指定命令参数. 
+            </summary> 
+            <remarks> 
+            示例:  
+             FillDataset(connString, CommandType.StoredProcedure, "GetOrders", ds, new string[] {"orders"}, new SqlParameter("@prodid", 24)); 
+            </remarks> 
+            <param name="connectionString">一个有效的数据库连接字符串</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名称或T-SQL语句</param> 
+            <param name="commandParameters">分配给命令的SqlParamter参数数组</param> 
+            <param name="dataSet">要填充结果集的DataSet实例</param> 
+            <param name="tableNames">表映射的数据表数组 
+            用户定义的表名 (可有是实际的表名.) 
+            </param> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.FillDataset(System.String,System.String,System.Data.DataSet,System.String[],System.Object[])">
+            <summary> 
+            执行指定数据库连接字符串的命令,映射数据表并填充数据集,指定存储过程参数值. 
+            </summary> 
+            <remarks> 
+            此方法不提供访问存储过程输出参数和返回值参数. 
+            
+            示例:  
+             FillDataset(connString, CommandType.StoredProcedure, "GetOrders", ds, new string[] {"orders"}, 24); 
+            </remarks> 
+            <param name="connectionString">一个有效的数据库连接字符串</param> 
+            <param name="spName">存储过程名称</param> 
+            <param name="dataSet">要填充结果集的DataSet实例</param> 
+            <param name="tableNames">表映射的数据表数组 
+            用户定义的表名 (可有是实际的表名.) 
+            </param>    
+            <param name="parameterValues">分配给存储过程输入参数的对象数组</param> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.FillDataset(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.DataSet,System.String[])">
+            <summary> 
+            执行指定数据库连接对象的命令,映射数据表并填充数据集. 
+            </summary> 
+            <remarks> 
+            示例:  
+             FillDataset(conn, CommandType.StoredProcedure, "GetOrders", ds, new string[] {"orders"}); 
+            </remarks> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名称或T-SQL语句</param> 
+            <param name="dataSet">要填充结果集的DataSet实例</param> 
+            <param name="tableNames">表映射的数据表数组 
+            用户定义的表名 (可有是实际的表名.) 
+            </param>    
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.FillDataset(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.DataSet,System.String[],System.Data.SqlClient.SqlParameter[])">
+            <summary> 
+            执行指定数据库连接对象的命令,映射数据表并填充数据集,指定参数. 
+            </summary> 
+            <remarks> 
+            示例:  
+             FillDataset(conn, CommandType.StoredProcedure, "GetOrders", ds, new string[] {"orders"}, new SqlParameter("@prodid", 24)); 
+            </remarks> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名称或T-SQL语句</param> 
+            <param name="dataSet">要填充结果集的DataSet实例</param> 
+            <param name="tableNames">表映射的数据表数组 
+            用户定义的表名 (可有是实际的表名.) 
+            </param> 
+            <param name="commandParameters">分配给命令的SqlParamter参数数组</param> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.FillDataset(System.Data.SqlClient.SqlConnection,System.String,System.Data.DataSet,System.String[],System.Object[])">
+            <summary> 
+            执行指定数据库连接对象的命令,映射数据表并填充数据集,指定存储过程参数值. 
+            </summary> 
+            <remarks> 
+            此方法不提供访问存储过程输出参数和返回值参数. 
+            
+            示例:  
+             FillDataset(conn, "GetOrders", ds, new string[] {"orders"}, 24, 36); 
+            </remarks> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="spName">存储过程名称</param> 
+            <param name="dataSet">要填充结果集的DataSet实例</param> 
+            <param name="tableNames">表映射的数据表数组 
+            用户定义的表名 (可有是实际的表名.) 
+            </param> 
+            <param name="parameterValues">分配给存储过程输入参数的对象数组</param> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.FillDataset(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.DataSet,System.String[])">
+            <summary> 
+            执行指定数据库事务的命令,映射数据表并填充数据集. 
+            </summary> 
+            <remarks> 
+            示例:  
+             FillDataset(trans, CommandType.StoredProcedure, "GetOrders", ds, new string[] {"orders"}); 
+            </remarks> 
+            <param name="transaction">一个有效的连接事务</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名称或T-SQL语句</param> 
+            <param name="dataSet">要填充结果集的DataSet实例</param> 
+            <param name="tableNames">表映射的数据表数组 
+            用户定义的表名 (可有是实际的表名.) 
+            </param> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.FillDataset(System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.DataSet,System.String[],System.Data.SqlClient.SqlParameter[])">
+            <summary> 
+            执行指定数据库事务的命令,映射数据表并填充数据集,指定参数. 
+            </summary> 
+            <remarks> 
+            示例:  
+             FillDataset(trans, CommandType.StoredProcedure, "GetOrders", ds, new string[] {"orders"}, new SqlParameter("@prodid", 24)); 
+            </remarks> 
+            <param name="transaction">一个有效的连接事务</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名称或T-SQL语句</param> 
+            <param name="dataSet">要填充结果集的DataSet实例</param> 
+            <param name="tableNames">表映射的数据表数组 
+            用户定义的表名 (可有是实际的表名.) 
+            </param> 
+            <param name="commandParameters">分配给命令的SqlParamter参数数组</param> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.FillDataset(System.Data.SqlClient.SqlTransaction,System.String,System.Data.DataSet,System.String[],System.Object[])">
+            <summary> 
+            执行指定数据库事务的命令,映射数据表并填充数据集,指定存储过程参数值. 
+            </summary> 
+            <remarks> 
+            此方法不提供访问存储过程输出参数和返回值参数. 
+            
+            示例:  
+             FillDataset(trans, "GetOrders", ds, new string[]{"orders"}, 24, 36); 
+            </remarks> 
+            <param name="transaction">一个有效的连接事务</param> 
+            <param name="spName">存储过程名称</param> 
+            <param name="dataSet">要填充结果集的DataSet实例</param> 
+            <param name="tableNames">表映射的数据表数组 
+            用户定义的表名 (可有是实际的表名.) 
+            </param> 
+            <param name="parameterValues">分配给存储过程输入参数的对象数组</param> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.FillDataset(System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.DataSet,System.String[],System.Data.SqlClient.SqlParameter[])">
+            <summary> 
+            [私有方法][内部调用]执行指定数据库连接对象/事务的命令,映射数据表并填充数据集,DataSet/TableNames/SqlParameters. 
+            </summary> 
+            <remarks> 
+            示例:  
+             FillDataset(conn, trans, CommandType.StoredProcedure, "GetOrders", ds, new string[] {"orders"}, new SqlParameter("@prodid", 24)); 
+            </remarks> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="transaction">一个有效的连接事务</param> 
+            <param name="commandType">命令类型 (存储过程,命令文本或其它)</param> 
+            <param name="commandText">存储过程名称或T-SQL语句</param> 
+            <param name="dataSet">要填充结果集的DataSet实例</param> 
+            <param name="tableNames">表映射的数据表数组 
+            用户定义的表名 (可有是实际的表名.) 
+            </param> 
+            <param name="commandParameters">分配给命令的SqlParamter参数数组</param> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.UpdateDataset(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlCommand,System.Data.DataSet,System.String)">
+            <summary> 
+            执行数据集更新到数据库,指定inserted, updated, or deleted命令. 
+            </summary> 
+            <remarks> 
+            示例:  
+             UpdateDataset(conn, insertCommand, deleteCommand, updateCommand, dataSet, "Order"); 
+            </remarks> 
+            <param name="insertCommand">[追加记录]一个有效的T-SQL语句或存储过程</param> 
+            <param name="deleteCommand">[删除记录]一个有效的T-SQL语句或存储过程</param> 
+            <param name="updateCommand">[更新记录]一个有效的T-SQL语句或存储过程</param> 
+            <param name="dataSet">要更新到数据库的DataSet</param> 
+            <param name="tableName">要更新到数据库的DataTable</param> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.CreateCommand(System.Data.SqlClient.SqlConnection,System.String,System.String[])">
+            <summary> 
+            创建SqlCommand命令,指定数据库连接对象,存储过程名和参数. 
+            </summary> 
+            <remarks> 
+            示例:  
+             SqlCommand command = CreateCommand(conn, "AddCustomer", "CustomerID", "CustomerName"); 
+            </remarks> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="spName">存储过程名称</param> 
+            <param name="sourceColumns">源表的列名称数组</param> 
+            <returns>返回SqlCommand命令</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteNonQueryTypedParams(System.String,System.String,System.Data.DataRow)">
+            <summary> 
+            执行指定连接数据库连接字符串的存储过程,使用DataRow做为参数值,返回受影响的行数. 
+            </summary> 
+            <param name="connectionString">一个有效的数据库连接字符串</param> 
+            <param name="spName">存储过程名称</param> 
+            <param name="dataRow">使用DataRow作为参数值</param> 
+            <returns>返回影响的行数</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteNonQueryTypedParams(System.Data.SqlClient.SqlConnection,System.String,System.Data.DataRow)">
+            <summary> 
+            执行指定连接数据库连接对象的存储过程,使用DataRow做为参数值,返回受影响的行数. 
+            </summary> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="spName">存储过程名称</param> 
+            <param name="dataRow">使用DataRow作为参数值</param> 
+            <returns>返回影响的行数</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteNonQueryTypedParams(System.Data.SqlClient.SqlTransaction,System.String,System.Data.DataRow)">
+            <summary> 
+            执行指定连接数据库事物的存储过程,使用DataRow做为参数值,返回受影响的行数. 
+            </summary> 
+            <param name="transaction">一个有效的连接事务 object</param> 
+            <param name="spName">存储过程名称</param> 
+            <param name="dataRow">使用DataRow作为参数值</param> 
+            <returns>返回影响的行数</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteDatasetTypedParams(System.String,System.String,System.Data.DataRow)">
+            <summary> 
+            执行指定连接数据库连接字符串的存储过程,使用DataRow做为参数值,返回DataSet. 
+            </summary> 
+            <param name="connectionString">一个有效的数据库连接字符串</param> 
+            <param name="spName">存储过程名称</param> 
+            <param name="dataRow">使用DataRow作为参数值</param> 
+            <returns>返回一个包含结果集的DataSet.</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteDatasetTypedParams(System.Data.SqlClient.SqlConnection,System.String,System.Data.DataRow)">
+            <summary> 
+            执行指定连接数据库连接对象的存储过程,使用DataRow做为参数值,返回DataSet. 
+            </summary> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="spName">存储过程名称</param> 
+            <param name="dataRow">使用DataRow作为参数值</param> 
+            <returns>返回一个包含结果集的DataSet.</returns> 
+            
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteDatasetTypedParams(System.Data.SqlClient.SqlTransaction,System.String,System.Data.DataRow)">
+            <summary> 
+            执行指定连接数据库事务的存储过程,使用DataRow做为参数值,返回DataSet. 
+            </summary> 
+            <param name="transaction">一个有效的连接事务 object</param> 
+            <param name="spName">存储过程名称</param> 
+            <param name="dataRow">使用DataRow作为参数值</param> 
+            <returns>返回一个包含结果集的DataSet.</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteReaderTypedParams(System.String,System.String,System.Data.DataRow)">
+            <summary> 
+            执行指定连接数据库连接字符串的存储过程,使用DataRow做为参数值,返回DataReader. 
+            </summary> 
+            <param name="connectionString">一个有效的数据库连接字符串</param> 
+            <param name="spName">存储过程名称</param> 
+            <param name="dataRow">使用DataRow作为参数值</param> 
+            <returns>返回包含结果集的SqlDataReader</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteReaderTypedParams(System.Data.SqlClient.SqlConnection,System.String,System.Data.DataRow)">
+            <summary> 
+            执行指定连接数据库连接对象的存储过程,使用DataRow做为参数值,返回DataReader. 
+            </summary> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="spName">存储过程名称</param> 
+            <param name="dataRow">使用DataRow作为参数值</param> 
+            <returns>返回包含结果集的SqlDataReader</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteReaderTypedParams(System.Data.SqlClient.SqlTransaction,System.String,System.Data.DataRow)">
+            <summary> 
+            执行指定连接数据库事物的存储过程,使用DataRow做为参数值,返回DataReader. 
+            </summary> 
+            <param name="transaction">一个有效的连接事务 object</param> 
+            <param name="spName">存储过程名称</param> 
+            <param name="dataRow">使用DataRow作为参数值</param> 
+            <returns>返回包含结果集的SqlDataReader</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteScalarTypedParams(System.String,System.String,System.Data.DataRow)">
+            <summary> 
+            执行指定连接数据库连接字符串的存储过程,使用DataRow做为参数值,返回结果集中的第一行第一列. 
+            </summary> 
+            <param name="connectionString">一个有效的数据库连接字符串</param> 
+            <param name="spName">存储过程名称</param> 
+            <param name="dataRow">使用DataRow作为参数值</param> 
+            <returns>返回结果集中的第一行第一列</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteScalarTypedParams(System.Data.SqlClient.SqlConnection,System.String,System.Data.DataRow)">
+            <summary> 
+            执行指定连接数据库连接对象的存储过程,使用DataRow做为参数值,返回结果集中的第一行第一列. 
+            </summary> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="spName">存储过程名称</param> 
+            <param name="dataRow">使用DataRow作为参数值</param> 
+            <returns>返回结果集中的第一行第一列</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteScalarTypedParams(System.Data.SqlClient.SqlTransaction,System.String,System.Data.DataRow)">
+            <summary> 
+            执行指定连接数据库事务的存储过程,使用DataRow做为参数值,返回结果集中的第一行第一列. 
+            </summary> 
+            <param name="transaction">一个有效的连接事务 object</param> 
+            <param name="spName">存储过程名称</param> 
+            <param name="dataRow">使用DataRow作为参数值</param> 
+            <returns>返回结果集中的第一行第一列</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteXmlReaderTypedParams(System.Data.SqlClient.SqlConnection,System.String,System.Data.DataRow)">
+            <summary> 
+            执行指定连接数据库连接对象的存储过程,使用DataRow做为参数值,返回XmlReader类型的结果集. 
+            </summary> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="spName">存储过程名称</param> 
+            <param name="dataRow">使用DataRow作为参数值</param> 
+            <returns>返回XmlReader结果集对象.</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelper.ExecuteXmlReaderTypedParams(System.Data.SqlClient.SqlTransaction,System.String,System.Data.DataRow)">
+            <summary> 
+            执行指定连接数据库事务的存储过程,使用DataRow做为参数值,返回XmlReader类型的结果集. 
+            </summary> 
+            <param name="transaction">一个有效的连接事务 object</param> 
+            <param name="spName">存储过程名称</param> 
+            <param name="dataRow">使用DataRow作为参数值</param> 
+            <returns>返回XmlReader结果集对象.</returns> 
+        </member>
+        <member name="T:DTTOOLS.SqlHelper.SqlConnectionOwnership">
+            <summary> 
+            枚举,标识数据库连接是由SqlHelper提供还是由调用者提供 
+            </summary> 
+        </member>
+        <member name="F:DTTOOLS.SqlHelper.SqlConnectionOwnership.Internal">
+            <summary>由SqlHelper提供连接</summary> 
+        </member>
+        <member name="F:DTTOOLS.SqlHelper.SqlConnectionOwnership.External">
+            <summary>由调用者提供连接</summary> 
+        </member>
+        <member name="T:DTTOOLS.SqlHelperParameterCache">
+            <summary> 
+            SqlHelperParameterCache提供缓存存储过程参数,并能够在运行时从存储过程中探索参数. 
+            </summary> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelperParameterCache.DiscoverSpParameterSet(System.Data.SqlClient.SqlConnection,System.String,System.Boolean)">
+            <summary> 
+            探索运行时的存储过程,返回SqlParameter参数数组. 
+            初始化参数值为 DBNull.Value. 
+            </summary> 
+            <param name="connection">一个有效的数据库连接</param> 
+            <param name="spName">存储过程名称</param> 
+            <param name="includeReturnValueParameter">是否包含返回值参数</param> 
+            <returns>返回SqlParameter参数数组</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelperParameterCache.CloneParameters(System.Data.SqlClient.SqlParameter[])">
+            <summary> 
+            SqlParameter参数数组的深层拷贝. 
+            </summary> 
+            <param name="originalParameters">原始参数数组</param> 
+            <returns>返回一个同样的参数数组</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelperParameterCache.CacheParameterSet(System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary> 
+            追加参数数组到缓存. 
+            </summary> 
+            <param name="connectionString">一个有效的数据库连接字符串</param> 
+            <param name="commandText">存储过程名或SQL语句</param> 
+            <param name="commandParameters">要缓存的参数数组</param> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelperParameterCache.GetCachedParameterSet(System.String,System.String)">
+            <summary> 
+            从缓存中获取参数数组. 
+            </summary> 
+            <param name="connectionString">一个有效的数据库连接字符</param> 
+            <param name="commandText">存储过程名或SQL语句</param> 
+            <returns>参数数组</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelperParameterCache.GetSpParameterSet(System.String,System.String)">
+            <summary> 
+            返回指定的存储过程的参数集 
+            </summary> 
+            <remarks> 
+            这个方法将查询数据库,并将信息存储到缓存. 
+            </remarks> 
+            <param name="connectionString">一个有效的数据库连接字符</param> 
+            <param name="spName">存储过程名</param> 
+            <returns>返回SqlParameter参数数组</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelperParameterCache.GetSpParameterSet(System.String,System.String,System.Boolean)">
+            <summary> 
+            返回指定的存储过程的参数集 
+            </summary> 
+            <remarks> 
+            这个方法将查询数据库,并将信息存储到缓存. 
+            </remarks> 
+            <param name="connectionString">一个有效的数据库连接字符.</param> 
+            <param name="spName">存储过程名</param> 
+            <param name="includeReturnValueParameter">是否包含返回值参数</param> 
+            <returns>返回SqlParameter参数数组</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelperParameterCache.GetSpParameterSet(System.Data.SqlClient.SqlConnection,System.String)">
+            <summary> 
+            [内部]返回指定的存储过程的参数集(使用连接对象). 
+            </summary> 
+            <remarks> 
+            这个方法将查询数据库,并将信息存储到缓存. 
+            </remarks> 
+            <param name="connection">一个有效的数据库连接字符</param> 
+            <param name="spName">存储过程名</param> 
+            <returns>返回SqlParameter参数数组</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelperParameterCache.GetSpParameterSet(System.Data.SqlClient.SqlConnection,System.String,System.Boolean)">
+            <summary> 
+            [内部]返回指定的存储过程的参数集(使用连接对象) 
+            </summary> 
+            <remarks> 
+            这个方法将查询数据库,并将信息存储到缓存. 
+            </remarks> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="spName">存储过程名</param> 
+            <param name="includeReturnValueParameter"> 
+            是否包含返回值参数 
+            </param> 
+            <returns>返回SqlParameter参数数组</returns> 
+        </member>
+        <member name="M:DTTOOLS.SqlHelperParameterCache.GetSpParameterSetInternal(System.Data.SqlClient.SqlConnection,System.String,System.Boolean)">
+            <summary> 
+            [私有]返回指定的存储过程的参数集(使用连接对象) 
+            </summary> 
+            <param name="connection">一个有效的数据库连接对象</param> 
+            <param name="spName">存储过程名</param> 
+            <param name="includeReturnValueParameter">是否包含返回值参数</param> 
+            <returns>返回SqlParameter参数数组</returns> 
+        </member>
+        <member name="M:DTTOOLS.GDITools.LoadBitmap(System.String)">
+            <summary>
+            图像加载
+            </summary>
+            <param name="path">加载路径</param>
+            <returns>位图</returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.LoadImageBrush(System.String,System.Int32,System.Int32)">
+            <summary>
+            返回ImageBrush
+            </summary>
+            <param name="path">图像路径</param>
+            <param name="w">显示宽度0为默认</param>
+            <param name="h">显示高度0为默认</param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.LoadImageBrush(System.String,System.Int32,System.Int32,System.Windows.Media.Stretch)">
+            <summary>
+            返回ImageBrush
+            </summary>
+            <param name="path">图像路径</param>
+            <param name="w">显示宽度0为默认</param>
+            <param name="h">显示高度0为默认</param>
+            <param name="stretch">适配方式</param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.LoadBitmapImage(System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            返回BitmapImage
+            </summary>
+            <param name="path">图像路径</param>
+            <param name="w">显示宽度0为默认</param>
+            <param name="h">显示高度0为默认</param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.FlushMemory">
+            <summary>
+            内存释放
+            </summary>
+        </member>
+        <member name="M:DTTOOLS.GDITools.PointXY(DTTOOLS.GDITools.FitSizeTable,System.Int32,System.Int32)">
+            <summary>
+            获取适配坐标
+            </summary>
+            <param name="picsize">适配比例</param>
+            <param name="w">容器宽度</param>
+            <param name="h">容器高度</param>
+            <returns>TempXY</returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.PointXY(DTTOOLS.GDITools.FitSizeTableD,System.Double,System.Double)">
+            <summary>
+            获取适配坐标
+            </summary>
+            <param name="picsize">适配比例</param>
+            <param name="w">容器宽度</param>
+            <param name="h">容器高度</param>
+            <returns>TempXY</returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.FitSize(System.Int64,System.Int64,System.Int64,System.Int64)">
+            <summary>
+            获取适配比例
+            </summary>
+            <param name="Srw">原图宽度</param>
+            <param name="Srh">原图高度</param>
+            <param name="Dsw">容器宽度</param>
+            <param name="Dsh">容器宽度</param>
+            <returns>FitSizeTable</returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.FitSize(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            获取适配比例
+            </summary>
+            <param name="Srw">原图宽度</param>
+            <param name="Srh">原图高度</param>
+            <param name="Dsw">容器宽度</param>
+            <param name="Dsh">容器宽度</param>
+            <returns>FitSizeTable</returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.FitSizeOutSide(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            获取从外往里适配比例
+            </summary>
+            <param name="Srw">原图宽度</param>
+            <param name="Srh">原图高度</param>
+            <param name="Dsw">容器宽度</param>
+            <param name="Dsh">容器宽度</param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.FitSizeOutSide(System.Int64,System.Int64,System.Int64,System.Int64)">
+            <summary>
+            获取从外往里适配比例
+            </summary>
+            <param name="Srw">原图宽度</param>
+            <param name="Srh">原图高度</param>
+            <param name="Dsw">容器宽度</param>
+            <param name="Dsh">容器宽度</param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.GetThumBitmap(System.String,System.Int32,System.Int32,System.Boolean)">
+              <summary>   
+              获取缩略图  
+              </summary> 
+              <param name="Path">图像路径</param>
+              <param name="Dsw">指定要创建图像宽度</param> 
+              <param name="Dsh">指定要创建图像高度</param> 
+            <returns>Bitmap</returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.GetThumBitmap(System.Drawing.Bitmap,System.Int32,System.Int32,System.Boolean)">
+              <summary>   
+              获取缩略图  
+              </summary> 
+              <param name="Path">位图</param>
+              <param name="Dsw">指定要创建图像宽度</param> 
+              <param name="Dsh">指定要创建图像高度</param> 
+            <returns>Bitmap</returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.Angle(System.Drawing.Bitmap,System.Single)">
+            <summary>
+            旋转图像
+            </summary>
+            <param name="temp">要旋转的位图</param>
+            <param name="angle">要旋转的角度</param>
+            <returns>Bitmap</returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.BitSize(System.Drawing.Bitmap,System.Single,System.Boolean,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            缩放图像
+            </summary>
+            <param name="temp">位图</param>
+            <param name="size">缩放大小</param>
+            <returns>Bitmap</returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.KiColorBalance(System.Drawing.Bitmap,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            RGB颜色调整
+            </summary>
+            <param name="bmp">位图</param>
+            <param name="rVal">R红色量</param>
+            <param name="gVal">G绿色量</param>
+            <param name="bVal">B蓝色量</param>
+            <returns>Bitmap</returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.KiLighten(System.Drawing.Bitmap,System.Int32)">
+            <summary>
+            亮度处理
+            </summary>
+            <param name="b">位图</param>
+            <param name="degree">亮度</param>
+            <returns>Bitmap</returns> 
+        </member>
+        <member name="M:DTTOOLS.GDITools.BlueScreenMatting(System.Int32,System.Int32,System.Int32,System.Drawing.Bitmap)">
+            <summary>
+            蓝背景抠像
+            </summary>
+            <param name="low"></param>
+            <param name="hig"></param>
+            <param name="metting"></param>
+            <param name="bit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.GreenScreenMatting(System.Int32,System.Int32,System.Int32,System.Drawing.Bitmap)">
+            <summary>
+            绿背景抠像
+            </summary>
+            <param name="low"></param>
+            <param name="hig"></param>
+            <param name="metting"></param>
+            <param name="bit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.BitmapToBitmapImage(System.Drawing.Bitmap)">
+            <summary>
+            BitmapImage  TO Bitmap
+            </summary>
+            <param name="bitmap"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.KiContrast(System.Drawing.Bitmap,System.Int32)">
+            <summary>
+            对比处理
+            </summary>
+            <param name="b">位图</param>
+            <param name="degree">对比</param>
+            <returns>Bitmap</returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.KiSharpen(System.Drawing.Bitmap,System.Single)">
+            <summary>
+            锐化处理
+            </summary>
+            <param name="b">位图</param>
+            <param name="val">锐化</param>
+            <returns>Bitmap</returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.GetFile(System.String)">
+            <summary>
+            获取所有图像文件
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:DTTOOLS.GDITools.Synthesis(System.Drawing.Bitmap,System.String)">
+            <summary>
+            合成图像
+            </summary>
+            <param name="bmp">合成原图</param>
+            <param name="synpath">合成边路径</param>
+            <param name="tx">合成起点x坐标</param>
+            <param name="ty">合成起点y坐标</param>  
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.Synthesis(System.Drawing.Bitmap,System.Drawing.Bitmap,System.Int32,System.Int32)">
+            <summary>
+            合成图像
+            </summary>
+            <param name="mpic">合成原图</param>
+            <param name="backpic">边框</param>
+            <param name="x">合成起点x坐标</param>
+            <param name="y">合成起点y坐标</param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.Synthesis(System.Drawing.Bitmap,System.String,System.Int32,System.Int32)">
+            <summary>
+            合成图像
+            </summary>
+            <param name="p1">合成原图</param>
+            <param name="p2">边框路径</param>
+            <param name="x">合成起点x坐标</param>
+            <param name="y">合成起点y坐标</param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.Synthesis(System.Drawing.Bitmap,System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            合成图像
+            </summary>
+            <param name="p1">合成原图</param>
+            <param name="p2">边框路径</param>
+            <param name="x">合成起点x坐标</param>
+            <param name="y">合成起点y坐标</param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.SynthesisBitmapSource(System.Drawing.Bitmap,System.Drawing.Bitmap,System.Double,System.Double,System.Double,System.Double,System.Boolean)">
+             <summary>
+            图像合成
+             </summary>
+             <param name="p1">原图</param>
+             <param name="p2">边框</param>
+             <param name="x">起点坐标x</param>
+             <param name="y">起点坐标y</param>
+             <param name="w">宽</param>
+             <param name="h">高</param>
+             <param name="pt">原图是否压在边框上</param>
+             <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.SynthesisBitmap(System.Drawing.Bitmap,System.Drawing.Bitmap,System.Double,System.Double,System.Double,System.Double,System.Boolean)">
+             <summary>
+            图像合成
+             </summary>
+             <param name="p1">原图</param>
+             <param name="p2">边框</param>
+             <param name="x">起点坐标x</param>
+             <param name="y">起点坐标y</param>
+             <param name="w">宽</param>
+             <param name="h">高</param>
+             <param name="pt">原图是否压在边框上</param>
+             <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.CompressImage(System.Drawing.Bitmap,System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            无损压缩图片
+            </summary>
+            <param name="sFile">原图片</param>
+            <param name="dFile">压缩后保存位置</param>
+            <param name="tWidth">横图宽度</param>
+            <param name="tWidth">竖图宽度</param>
+            <param name="flag">压缩质量 1-100</param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.photoQR(System.String)">
+            <summary>
+            二维码生成
+            </summary>
+            <param name="qRstring"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.photoQR(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            二维码生成
+            </summary>
+            <param name="qRstring">字符串</param>
+            <param name="qrEncoding">三种尺寸：BYTE ，ALPHA_NUMERIC，NUMERIC</param>
+            <param name="level">大小：L M Q H</param>
+            <param name="version">版本4</param>
+            <param name="scale">比例</param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.CompressImage(System.String,System.String,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            无损压缩图片
+            </summary>
+            <param name="sFile">原图片</param>
+            <param name="dFile">压缩后保存位置</param>
+            <param name="tWidth">横图宽度</param>
+            <param name="flag">压缩质量 1-100</param>
+            <param name="IsDelect">是否删除原始照片</param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.CompressImage(System.String,System.String,System.Int32,System.Boolean)">
+            <summary>
+            无损压缩图片
+            </summary>
+            <param name="sFile">原图片</param>
+            <param name="dFile">原图片</param>
+            <param name="flag">压缩质量 1-100</param>
+            <param name="IsDelect">是否删除原始照片</param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.GetStringRows(System.Drawing.Graphics,System.Drawing.Font,System.String,System.Int32)">
+            <summary>
+            将文本分行
+            </summary>
+            <param name="graphic">绘图图面</param>
+            <param name="font">字体</param>
+            <param name="text">文本</param>
+            <param name="width">行宽</param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.GetImageSize(System.IO.FileInfo)">
+            <summary>
+            快速读取图像分辨率大小
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.GetImageSize(System.IO.Stream)">
+            <summary>
+            快速读取图像分辨率大小
+            </summary>
+            <param name="ImageStream"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.GetJpegSize(System.IO.Stream,System.Drawing.Size@)">
+            <summary>
+            快速读取jpg图像分辨率大小
+            </summary>
+            <param name="JpegStream"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.GetPngSize(System.IO.Stream,System.Drawing.Size@)">
+            <summary>
+            快速读取png图像分辨率大小
+            </summary>
+            <param name="JpegStream"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.GetGifSize(System.IO.Stream,System.Drawing.Size@)">
+            <summary>
+            快速读取gif图像分辨率大小
+            </summary>
+            <param name="PngStm"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.GetBmpSize(System.IO.Stream,System.Drawing.Size@)">
+            <summary>
+            快速读取bmp图像分辨率大小
+            </summary>
+            <param name="PngStm"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.Tools.ElementInquiry.GetParentObject``1(System.Windows.DependencyObject)">
+            <summary>
+            获取指定元素的父元素
+            </summary>
+            <param name="obj">要查询的元素</param>
+            <typeparam name="T">元素类型</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.Tools.ElementInquiry.GetChildObjects``1(System.Windows.DependencyObject)">
+            <summary>
+            获取指定元素的所有元素
+            </summary>
+            <typeparam name="T">获取元素类型</typeparam>
+            <param name="obj">要查询的元素</param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.Tools.ElementInquiry.GetChildObject``1(System.Windows.DependencyObject,System.String)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T">元素类型</typeparam>
+            <param name="obj">容器元素</param>
+            <param name="name">元素名称</param>
+            <returns></returns>
+        </member>
+        <member name="T:DTTOOLS.Tools.Errorlog">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DTTOOLS.Tools.Errorlog.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:DTTOOLS.Tools.Errorlog.WriteError(System.Exception)">
+            <summary>
+            
+            </summary>
+            <param name="error"></param>
+        </member>
+        <member name="M:DTTOOLS.GDIToolsBase.LoadImageBrush(System.String,System.Int32,System.Int32)">
+            <summary>
+            加载图像
+            </summary>
+            <param name="path">图像路径</param>
+            <param name="w">宽</param>
+            <param name="h">高</param>
+        </member>
+        <member name="T:DTTOOLS.GlobalEventProvider">
+            <summary>
+            This component monitors all mouse activities globally (also outside of the application) 
+            and provides appropriate events.
+            </summary>
+        </member>
+        <member name="P:DTTOOLS.GlobalEventProvider.CanRaiseEvents">
+            <summary>
+            This component raises events. The value is always true.
+            </summary>
+        </member>
+        <member name="E:DTTOOLS.GlobalEventProvider.MouseMove">
+            <summary>
+            Occurs when the mouse pointer is moved. 
+            </summary>
+        </member>
+        <member name="E:DTTOOLS.GlobalEventProvider.MouseClick">
+            <summary>
+            Occurs when a click was performed by the mouse. 
+            </summary>
+        </member>
+        <member name="E:DTTOOLS.GlobalEventProvider.MouseDown">
+            <summary>
+            Occurs when the mouse a mouse button is pressed. 
+            </summary>
+        </member>
+        <member name="E:DTTOOLS.GlobalEventProvider.MouseUp">
+            <summary>
+            Occurs when a mouse button is released. 
+            </summary>
+        </member>
+        <member name="E:DTTOOLS.GlobalEventProvider.MouseDoubleClick">
+            <summary>
+            Occurs when a double clicked was performed by the mouse. 
+            </summary>
+        </member>
+        <member name="E:DTTOOLS.GlobalEventProvider.MouseMoveExt">
+            <summary>
+            Occurs when the mouse pointer is moved. 
+            </summary>
+            <remarks>
+            This event provides extended arguments of type <see cref="T:System.Windows.Forms.MouseEventArgs"/> enabling you to 
+            supress further processing of mouse movement in other applications.
+            </remarks>
+        </member>
+        <member name="E:DTTOOLS.GlobalEventProvider.MouseClickExt">
+            <summary>
+            Occurs when a click was performed by the mouse. 
+            </summary>
+            <remarks>
+            This event provides extended arguments of type <see cref="T:System.Windows.Forms.MouseEventArgs"/> enabling you to 
+            supress further processing of mouse click in other applications.
+            </remarks>
+        </member>
+        <member name="E:DTTOOLS.GlobalEventProvider.KeyPress">
+             <summary>
+             Occurs when a key is pressed.
+             </summary>
+             <remarks>
+             Key events occur in the following order: 
+             <list type="number">
+             <item>KeyDown</item>
+             <item>KeyPress</item>
+             <item>KeyUp</item>
+             </list>
+            The KeyPress event is not raised by noncharacter keys; however, the noncharacter keys do raise the KeyDown and KeyUp events. 
+            Use the KeyChar property to sample keystrokes at run time and to consume or modify a subset of common keystrokes. 
+            To handle keyboard events only in your application and not enable other applications to receive keyboard events, 
+             set the KeyPressEventArgs.Handled property in your form's KeyPress event-handling method to <b>true</b>. 
+             </remarks>
+        </member>
+        <member name="E:DTTOOLS.GlobalEventProvider.KeyUp">
+            <summary>
+            Occurs when a key is released. 
+            </summary>
+        </member>
+        <member name="E:DTTOOLS.GlobalEventProvider.KeyDown">
+            <summary>
+            Occurs when a key is preseed. 
+            </summary>
+        </member>
+        <member name="T:DTTOOLS.HookManager">
+            <summary>
+            This class monitors all mouse activities globally (also outside of the application) 
+            and provides appropriate events.
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.WH_MOUSE_LL">
+            <summary>
+            Windows NT/2000/XP: Installs a hook procedure that monitors low-level mouse input events.
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.WH_KEYBOARD_LL">
+            <summary>
+            Windows NT/2000/XP: Installs a hook procedure that monitors low-level keyboard  input events.
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.WH_MOUSE">
+            <summary>
+            Installs a hook procedure that monitors mouse messages. For more information, see the MouseProc hook procedure. 
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.WH_KEYBOARD">
+            <summary>
+            Installs a hook procedure that monitors keystroke messages. For more information, see the KeyboardProc hook procedure. 
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.WM_MOUSEMOVE">
+            <summary>
+            The WM_MOUSEMOVE message is posted to a window when the cursor moves. 
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.WM_LBUTTONDOWN">
+            <summary>
+            The WM_LBUTTONDOWN message is posted when the user presses the left mouse button 
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.WM_RBUTTONDOWN">
+            <summary>
+            The WM_RBUTTONDOWN message is posted when the user presses the right mouse button
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.WM_MBUTTONDOWN">
+            <summary>
+            The WM_MBUTTONDOWN message is posted when the user presses the middle mouse button 
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.WM_LBUTTONUP">
+            <summary>
+            The WM_LBUTTONUP message is posted when the user releases the left mouse button 
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.WM_RBUTTONUP">
+            <summary>
+            The WM_RBUTTONUP message is posted when the user releases the right mouse button 
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.WM_MBUTTONUP">
+            <summary>
+            The WM_MBUTTONUP message is posted when the user releases the middle mouse button 
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.WM_LBUTTONDBLCLK">
+            <summary>
+            The WM_LBUTTONDBLCLK message is posted when the user double-clicks the left mouse button 
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.WM_RBUTTONDBLCLK">
+            <summary>
+            The WM_RBUTTONDBLCLK message is posted when the user double-clicks the right mouse button 
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.WM_MBUTTONDBLCLK">
+            <summary>
+            The WM_RBUTTONDOWN message is posted when the user presses the right mouse button 
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.WM_MOUSEWHEEL">
+            <summary>
+            The WM_MOUSEWHEEL message is posted when the user presses the mouse wheel. 
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.WM_KEYDOWN">
+            <summary>
+            The WM_KEYDOWN message is posted to the window with the keyboard focus when a nonsystem 
+            key is pressed. A nonsystem key is a key that is pressed when the ALT key is not pressed.
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.WM_KEYUP">
+            <summary>
+            The WM_KEYUP message is posted to the window with the keyboard focus when a nonsystem 
+            key is released. A nonsystem key is a key that is pressed when the ALT key is not pressed, 
+            or a keyboard key that is pressed when a window has the keyboard focus.
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.WM_SYSKEYDOWN">
+            <summary>
+            The WM_SYSKEYDOWN message is posted to the window with the keyboard focus when the user 
+            presses the F10 key (which activates the menu bar) or holds down the ALT key and then 
+            presses another key. It also occurs when no window currently has the keyboard focus; 
+            in this case, the WM_SYSKEYDOWN message is sent to the active window. The window that 
+            receives the message can distinguish between these two contexts by checking the context 
+            code in the lParam parameter. 
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.WM_SYSKEYUP">
+            <summary>
+            The WM_SYSKEYUP message is posted to the window with the keyboard focus when the user 
+            releases a key that was pressed while the ALT key was held down. It also occurs when no 
+            window currently has the keyboard focus; in this case, the WM_SYSKEYUP message is sent 
+            to the active window. The window that receives the message can distinguish between 
+            these two contexts by checking the context code in the lParam parameter. 
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.s_MouseDelegate">
+            <summary>
+            This field is not objectively needed but we need to keep a reference on a delegate which will be 
+            passed to unmanaged code. To avoid GC to clean it up.
+            When passing delegates to unmanaged code, they must be kept alive by the managed application 
+            until it is guaranteed that they will never be called.
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.s_MouseHookHandle">
+            <summary>
+            Stores the handle to the mouse hook procedure.
+            </summary>
+        </member>
+        <member name="M:DTTOOLS.HookManager.MouseHookProc(System.Int32,System.Int32,System.IntPtr)">
+            <summary>
+            A callback function which will be called every Time a mouse activity detected.
+            </summary>
+            <param name="nCode">
+            [in] Specifies whether the hook procedure must process the message. 
+            If nCode is HC_ACTION, the hook procedure must process the message. 
+            If nCode is less than zero, the hook procedure must pass the message to the 
+            CallNextHookEx function without further processing and must return the 
+            value returned by CallNextHookEx.
+            </param>
+            <param name="wParam">
+            [in] Specifies whether the message was sent by the current thread. 
+            If the message was sent by the current thread, it is nonzero; otherwise, it is zero. 
+            </param>
+            <param name="lParam">
+            [in] Pointer to a CWPSTRUCT structure that contains details about the message. 
+            </param>
+            <returns>
+            If nCode is less than zero, the hook procedure must return the value returned by CallNextHookEx. 
+            If nCode is greater than or equal to zero, it is highly recommended that you call CallNextHookEx 
+            and return the value it returns; otherwise, other applications that have installed WH_CALLWNDPROC 
+            hooks will not receive hook notifications and may behave incorrectly as a result. If the hook 
+            procedure does not call CallNextHookEx, the return value should be zero. 
+            </returns>
+        </member>
+        <member name="F:DTTOOLS.HookManager.s_KeyboardDelegate">
+            <summary>
+            This field is not objectively needed but we need to keep a reference on a delegate which will be 
+            passed to unmanaged code. To avoid GC to clean it up.
+            When passing delegates to unmanaged code, they must be kept alive by the managed application 
+            until it is guaranteed that they will never be called.
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.s_KeyboardHookHandle">
+            <summary>
+            Stores the handle to the Keyboard hook procedure.
+            </summary>
+        </member>
+        <member name="M:DTTOOLS.HookManager.KeyboardHookProc(System.Int32,System.Int32,System.IntPtr)">
+            <summary>
+            A callback function which will be called every Time a keyboard activity detected.
+            </summary>
+            <param name="nCode">
+            [in] Specifies whether the hook procedure must process the message. 
+            If nCode is HC_ACTION, the hook procedure must process the message. 
+            If nCode is less than zero, the hook procedure must pass the message to the 
+            CallNextHookEx function without further processing and must return the 
+            value returned by CallNextHookEx.
+            </param>
+            <param name="wParam">
+            [in] Specifies whether the message was sent by the current thread. 
+            If the message was sent by the current thread, it is nonzero; otherwise, it is zero. 
+            </param>
+            <param name="lParam">
+            [in] Pointer to a CWPSTRUCT structure that contains details about the message. 
+            </param>
+            <returns>
+            If nCode is less than zero, the hook procedure must return the value returned by CallNextHookEx. 
+            If nCode is greater than or equal to zero, it is highly recommended that you call CallNextHookEx 
+            and return the value it returns; otherwise, other applications that have installed WH_CALLWNDPROC 
+            hooks will not receive hook notifications and may behave incorrectly as a result. If the hook 
+            procedure does not call CallNextHookEx, the return value should be zero. 
+            </returns>
+        </member>
+        <member name="M:DTTOOLS.HookManager.OnMouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            This method is designed to monitor mouse clicks in order to fire a double click event if interval between 
+            clicks was short enaugh.
+            </summary>
+            <param name="sender">Is always null</param>
+            <param name="e">Some information about click heppened.</param>
+        </member>
+        <member name="M:DTTOOLS.HookManager.CallNextHookEx(System.Int32,System.Int32,System.Int32,System.IntPtr)">
+            <summary>
+            The CallNextHookEx function passes the hook information to the next hook procedure in the current hook chain. 
+            A hook procedure can call this function either before or after processing the hook information. 
+            </summary>
+            <param name="idHook">Ignored.</param>
+            <param name="nCode">
+            [in] Specifies the hook code passed to the current hook procedure. 
+            The next hook procedure uses this code to determine how to process the hook information.
+            </param>
+            <param name="wParam">
+            [in] Specifies the wParam value passed to the current hook procedure. 
+            The meaning of this parameter depends on the type of hook associated with the current hook chain. 
+            </param>
+            <param name="lParam">
+            [in] Specifies the lParam value passed to the current hook procedure. 
+            The meaning of this parameter depends on the type of hook associated with the current hook chain. 
+            </param>
+            <returns>
+            This value is returned by the next hook procedure in the chain. 
+            The current hook procedure must also return this value. The meaning of the return value depends on the hook type. 
+            For more information, see the descriptions of the individual hook procedures.
+            </returns>
+            <remarks>
+            http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/windowing/hooks/hookreference/hookfunctions/setwindowshookex.asp
+            </remarks>
+        </member>
+        <member name="M:DTTOOLS.HookManager.SetWindowsHookEx(System.Int32,DTTOOLS.HookManager.HookProc,System.Int32,System.Int32)">
+            <summary>
+            The SetWindowsHookEx function installs an application-defined hook procedure into a hook chain. 
+            You would install a hook procedure to monitor the system for certain types of events. These events 
+            are associated either with a specific thread or with all threads in the same desktop as the calling thread. 
+            </summary>
+            <param name="idHook">
+            [in] Specifies the type of hook procedure to be installed. This parameter can be one of the following values.
+            </param>
+            <param name="lpfn">
+            [in] Pointer to the hook procedure. If the dwThreadId parameter is zero or specifies the identifier of a 
+            thread created by a different process, the lpfn parameter must point to a hook procedure in a dynamic-link 
+            library (DLL). Otherwise, lpfn can point to a hook procedure in the code associated with the current process.
+            </param>
+            <param name="hMod">
+            [in] Handle to the DLL containing the hook procedure pointed to by the lpfn parameter. 
+            The hMod parameter must be set to NULL if the dwThreadId parameter specifies a thread created by 
+            the current process and if the hook procedure is within the code associated with the current process. 
+            </param>
+            <param name="dwThreadId">
+            [in] Specifies the identifier of the thread with which the hook procedure is to be associated. 
+            If this parameter is zero, the hook procedure is associated with all existing threads running in the 
+            same desktop as the calling thread. 
+            </param>
+            <returns>
+            If the function succeeds, the return value is the handle to the hook procedure.
+            If the function fails, the return value is NULL. To get extended error information, call GetLastError.
+            </returns>
+            <remarks>
+            http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/windowing/hooks/hookreference/hookfunctions/setwindowshookex.asp
+            </remarks>
+        </member>
+        <member name="M:DTTOOLS.HookManager.UnhookWindowsHookEx(System.Int32)">
+            <summary>
+            The UnhookWindowsHookEx function removes a hook procedure installed in a hook chain by the SetWindowsHookEx function. 
+            </summary>
+            <param name="idHook">
+            [in] Handle to the hook to be removed. This parameter is a hook handle obtained by a previous call to SetWindowsHookEx. 
+            </param>
+            <returns>
+            If the function succeeds, the return value is nonzero.
+            If the function fails, the return value is zero. To get extended error information, call GetLastError.
+            </returns>
+            <remarks>
+            http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/windowing/hooks/hookreference/hookfunctions/setwindowshookex.asp
+            </remarks>
+        </member>
+        <member name="M:DTTOOLS.HookManager.GetDoubleClickTime">
+            <summary>
+            The GetDoubleClickTime function retrieves the current double-click time for the mouse. A double-click is a series of two clicks of the 
+            mouse button, the second occurring within a specified time after the first. The double-click time is the maximum number of 
+            milliseconds that may occur between the first and second click of a double-click. 
+            </summary>
+            <returns>
+            The return value specifies the current double-click time, in milliseconds. 
+            </returns>
+            <remarks>
+            http://msdn.microsoft.com/en-us/library/ms646258(VS.85).aspx
+            </remarks>
+        </member>
+        <member name="M:DTTOOLS.HookManager.ToAscii(System.Int32,System.Int32,System.Byte[],System.Byte[],System.Int32)">
+            <summary>
+            The ToAscii function translates the specified virtual-key code and keyboard 
+            state to the corresponding character or characters. The function translates the code 
+            using the input language and physical keyboard layout identified by the keyboard layout handle.
+            </summary>
+            <param name="uVirtKey">
+            [in] Specifies the virtual-key code to be translated. 
+            </param>
+            <param name="uScanCode">
+            [in] Specifies the hardware scan code of the key to be translated. 
+            The high-order bit of this value is set if the key is up (not pressed). 
+            </param>
+            <param name="lpbKeyState">
+            [in] Pointer to a 256-byte array that contains the current keyboard state. 
+            Each element (byte) in the array contains the state of one key. 
+            If the high-order bit of a byte is set, the key is down (pressed). 
+            The low bit, if set, indicates that the key is toggled on. In this function, 
+            only the toggle bit of the CAPS LOCK key is relevant. The toggle state 
+            of the NUM LOCK and SCROLL LOCK keys is ignored.
+            </param>
+            <param name="lpwTransKey">
+            [out] Pointer to the buffer that receives the translated character or characters. 
+            </param>
+            <param name="fuState">
+            [in] Specifies whether a menu is active. This parameter must be 1 if a menu is active, or 0 otherwise. 
+            </param>
+            <returns>
+            If the specified key is a dead key, the return value is negative. Otherwise, it is one of the following values. 
+            Value Meaning 
+            0 The specified virtual key has no translation for the current state of the keyboard. 
+            1 One character was copied to the buffer. 
+            2 Two characters were copied to the buffer. This usually happens when a dead-key character 
+            (accent or diacritic) stored in the keyboard layout cannot be composed with the specified 
+            virtual key to form a single character. 
+            </returns>
+            <remarks>
+            http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/userinput/keyboardinput/keyboardinputreference/keyboardinputfunctions/toascii.asp
+            </remarks>
+        </member>
+        <member name="M:DTTOOLS.HookManager.GetKeyboardState(System.Byte[])">
+            <summary>
+            The GetKeyboardState function copies the status of the 256 virtual keys to the 
+            specified buffer. 
+            </summary>
+            <param name="pbKeyState">
+            [in] Pointer to a 256-byte array that contains keyboard key states. 
+            </param>
+            <returns>
+            If the function succeeds, the return value is nonzero.
+            If the function fails, the return value is zero. To get extended error information, call GetLastError. 
+            </returns>
+            <remarks>
+            http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/userinput/keyboardinput/keyboardinputreference/keyboardinputfunctions/toascii.asp
+            </remarks>
+        </member>
+        <member name="M:DTTOOLS.HookManager.GetKeyState(System.Int32)">
+             <summary>
+             The GetKeyState function retrieves the status of the specified virtual key. The status specifies whether the key is up, down, or toggled 
+             (on, off梐lternating each time the key is pressed). 
+             </summary>
+             <param name="vKey">
+             [in] Specifies a virtual key. If the desired virtual key is a letter or digit (A through Z, a through z, or 0 through 9), nVirtKey must be set to the ASCII value of that character. For other keys, it must be a virtual-key code. 
+             </param>
+             <returns>
+             The return value specifies the status of the specified virtual key, as follows: 
+            If the high-order bit is 1, the key is down; otherwise, it is up.
+            If the low-order bit is 1, the key is toggled. A key, such as the CAPS LOCK key, is toggled if it is turned on. The key is off and untoggled if the low-order bit is 0. A toggle key's indicator light (if any) on the keyboard will be on when the key is toggled, and off when the key is untoggled.
+             </returns>
+             <remarks>http://msdn.microsoft.com/en-us/library/ms646301.aspx</remarks>
+        </member>
+        <member name="E:DTTOOLS.HookManager.MouseMove">
+            <summary>
+            Occurs when the mouse pointer is moved. 
+            </summary>
+        </member>
+        <member name="E:DTTOOLS.HookManager.MouseMoveExt">
+            <summary>
+            Occurs when the mouse pointer is moved. 
+            </summary>
+            <remarks>
+            This event provides extended arguments of type <see cref="T:System.Windows.Forms.MouseEventArgs"/> enabling you to 
+            supress further processing of mouse movement in other applications.
+            </remarks>
+        </member>
+        <member name="E:DTTOOLS.HookManager.MouseClick">
+            <summary>
+            Occurs when a click was performed by the mouse. 
+            </summary>
+        </member>
+        <member name="E:DTTOOLS.HookManager.MouseClickExt">
+            <summary>
+            Occurs when a click was performed by the mouse. 
+            </summary>
+            <remarks>
+            This event provides extended arguments of type <see cref="T:System.Windows.Forms.MouseEventArgs"/> enabling you to 
+            supress further processing of mouse click in other applications.
+            </remarks>
+        </member>
+        <member name="E:DTTOOLS.HookManager.MouseDown">
+            <summary>
+            Occurs when the mouse a mouse button is pressed. 
+            </summary>
+        </member>
+        <member name="E:DTTOOLS.HookManager.MouseUp">
+            <summary>
+            Occurs when a mouse button is released. 
+            </summary>
+        </member>
+        <member name="E:DTTOOLS.HookManager.MouseWheel">
+            <summary>
+            Occurs when the mouse wheel moves. 
+            </summary>
+        </member>
+        <member name="E:DTTOOLS.HookManager.MouseDoubleClick">
+            <summary>
+            Occurs when a double clicked was performed by the mouse. 
+            </summary>
+        </member>
+        <member name="E:DTTOOLS.HookManager.KeyPress">
+             <summary>
+             Occurs when a key is pressed.
+             </summary>
+             <remarks>
+             Key events occur in the following order: 
+             <list type="number">
+             <item>KeyDown</item>
+             <item>KeyPress</item>
+             <item>KeyUp</item>
+             </list>
+            The KeyPress event is not raised by noncharacter keys; however, the noncharacter keys do raise the KeyDown and KeyUp events. 
+            Use the KeyChar property to sample keystrokes at run time and to consume or modify a subset of common keystrokes. 
+            To handle keyboard events only in your application and not enable other applications to receive keyboard events, 
+             set the KeyPressEventArgs.Handled property in your form's KeyPress event-handling method to <b>true</b>. 
+             </remarks>
+        </member>
+        <member name="E:DTTOOLS.HookManager.KeyUp">
+            <summary>
+            Occurs when a key is released. 
+            </summary>
+        </member>
+        <member name="E:DTTOOLS.HookManager.KeyDown">
+            <summary>
+            Occurs when a key is preseed. 
+            </summary>
+        </member>
+        <member name="T:DTTOOLS.HookManager.HookProc">
+            <summary>
+            The CallWndProc hook procedure is an application-defined or library-defined callback 
+            function used with the SetWindowsHookEx function. The HOOKPROC type defines a pointer 
+            to this callback function. CallWndProc is a placeholder for the application-defined 
+            or library-defined function name.
+            </summary>
+            <param name="nCode">
+            [in] Specifies whether the hook procedure must process the message. 
+            If nCode is HC_ACTION, the hook procedure must process the message. 
+            If nCode is less than zero, the hook procedure must pass the message to the 
+            CallNextHookEx function without further processing and must return the 
+            value returned by CallNextHookEx.
+            </param>
+            <param name="wParam">
+            [in] Specifies whether the message was sent by the current thread. 
+            If the message was sent by the current thread, it is nonzero; otherwise, it is zero. 
+            </param>
+            <param name="lParam">
+            [in] Pointer to a CWPSTRUCT structure that contains details about the message. 
+            </param>
+            <returns>
+            If nCode is less than zero, the hook procedure must return the value returned by CallNextHookEx. 
+            If nCode is greater than or equal to zero, it is highly recommended that you call CallNextHookEx 
+            and return the value it returns; otherwise, other applications that have installed WH_CALLWNDPROC 
+            hooks will not receive hook notifications and may behave incorrectly as a result. If the hook 
+            procedure does not call CallNextHookEx, the return value should be zero. 
+            </returns>
+            <remarks>
+            http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/windowing/hooks/hookreference/hookfunctions/callwndproc.asp
+            </remarks>
+        </member>
+        <member name="T:DTTOOLS.HookManager.Point">
+            <summary>
+            The Point structure defines the X- and Y- coordinates of a point. 
+            </summary>
+            <remarks>
+            http://msdn.microsoft.com/library/default.asp?url=/library/en-us/gdi/rectangl_0tiq.asp
+            </remarks>
+        </member>
+        <member name="F:DTTOOLS.HookManager.Point.X">
+            <summary>
+            Specifies the X-coordinate of the point. 
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.Point.Y">
+            <summary>
+            Specifies the Y-coordinate of the point. 
+            </summary>
+        </member>
+        <member name="T:DTTOOLS.HookManager.MouseLLHookStruct">
+            <summary>
+            The MSLLHOOKSTRUCT structure contains information about a low-level keyboard input event. 
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.MouseLLHookStruct.Point">
+            <summary>
+            Specifies a Point structure that contains the X- and Y-coordinates of the cursor, in screen coordinates. 
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.MouseLLHookStruct.MouseData">
+             <summary>
+             If the message is WM_MOUSEWHEEL, the high-order word of this member is the wheel delta. 
+             The low-order word is reserved. A positive value indicates that the wheel was rotated forward, 
+             away from the user; a negative value indicates that the wheel was rotated backward, toward the user. 
+             One wheel click is defined as WHEEL_DELTA, which is 120. 
+            If the message is WM_XBUTTONDOWN, WM_XBUTTONUP, WM_XBUTTONDBLCLK, WM_NCXBUTTONDOWN, WM_NCXBUTTONUP,
+             or WM_NCXBUTTONDBLCLK, the high-order word specifies which X button was pressed or released, 
+             and the low-order word is reserved. This value can be one or more of the following values. Otherwise, MouseData is not used. 
+            XBUTTON1
+            The first X button was pressed or released.
+            XBUTTON2
+            The second X button was pressed or released.
+             </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.MouseLLHookStruct.Flags">
+             <summary>
+             Specifies the event-injected flag. An application can use the following value to test the mouse Flags. Value Purpose 
+            LLMHF_INJECTED Test the event-injected flag.  
+            0
+            Specifies whether the event was injected. The value is 1 if the event was injected; otherwise, it is 0.
+            1-15
+            Reserved.
+             </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.MouseLLHookStruct.Time">
+            <summary>
+            Specifies the Time stamp for this message.
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.MouseLLHookStruct.ExtraInfo">
+            <summary>
+            Specifies extra information associated with the message. 
+            </summary>
+        </member>
+        <member name="T:DTTOOLS.HookManager.KeyboardHookStruct">
+            <summary>
+            The KBDLLHOOKSTRUCT structure contains information about a low-level keyboard input event. 
+            </summary>
+            <remarks>
+            http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/windowing/hooks/hookreference/hookstructures/cwpstruct.asp
+            </remarks>
+        </member>
+        <member name="F:DTTOOLS.HookManager.KeyboardHookStruct.VirtualKeyCode">
+            <summary>
+            Specifies a virtual-key code. The code must be a value in the range 1 to 254. 
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.KeyboardHookStruct.ScanCode">
+            <summary>
+            Specifies a hardware scan code for the key. 
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.KeyboardHookStruct.Flags">
+            <summary>
+            Specifies the extended-key flag, event-injected flag, context code, and transition-state flag.
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.KeyboardHookStruct.Time">
+            <summary>
+            Specifies the Time stamp for this message.
+            </summary>
+        </member>
+        <member name="F:DTTOOLS.HookManager.KeyboardHookStruct.ExtraInfo">
+            <summary>
+            Specifies extra information associated with the message. 
+            </summary>
+        </member>
+        <member name="T:DTTOOLS.MouseEventExtArgs">
+            <summary>
+            Provides data for the MouseClickExt and MouseMoveExt events. It also provides a property Handled.
+            Set this property to <b>true</b> to prevent further processing of the event in other applications.
+            </summary>
+        </member>
+        <member name="M:DTTOOLS.MouseEventExtArgs.#ctor(System.Windows.Forms.MouseButtons,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the MouseEventArgs class. 
+            </summary>
+            <param name="buttons">One of the MouseButtons values indicating which mouse button was pressed.</param>
+            <param name="clicks">The number of times a mouse button was pressed.</param>
+            <param name="x">The x-coordinate of a mouse click, in pixels.</param>
+            <param name="y">The y-coordinate of a mouse click, in pixels.</param>
+            <param name="delta">A signed count of the number of detents the wheel has rotated.</param>
+        </member>
+        <member name="M:DTTOOLS.MouseEventExtArgs.#ctor(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Initializes a new instance of the MouseEventArgs class. 
+            </summary>
+            <param name="e">An ordinary <see cref="T:System.Windows.Forms.MouseEventArgs"/> argument to be extended.</param>
+        </member>
+        <member name="P:DTTOOLS.MouseEventExtArgs.Handled">
+            <summary>
+            Set this property to <b>true</b> inside your event handler to prevent further processing of the event in other applications.
+            </summary>
+        </member>
+        <member name="M:DTTOOLS.DTIni.Ini(System.String)">
+            <summary>
+            设置INI路径
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:DTTOOLS.DTIni.Ini">
+            <summary>
+            设置INI路径
+            </summary>
+        </member>
+        <member name="M:DTTOOLS.DTIni.Write(System.String,System.String,System.String)">
+            <summary>
+            INI写入 使用前先调用void Ini 赋值路径
+            </summary>
+            <param name="section">配置节</param>
+            <param name="key">键名</param>
+            <param name="value">值</param>
+        </member>
+        <member name="M:DTTOOLS.DTIni.ReadValue(System.String,System.String)">
+            <summary>
+            INI读取 使用前先调用void Ini 赋值路径
+            </summary>
+            <param name="section">配置节</param>
+            <param name="key">键名</param>
+            <returns>返回读取值</returns>
+        </member>
+        <member name="M:DTTOOLS.DTIni.ReadValue(System.String,System.String,System.String)">
+            <summary>
+            INI读取预设值比较返回true false
+            </summary>
+            <param name="section">配置节</param>
+            <param name="key">键名</param>
+            <param name="comparedvalue">预设值</param>
+            <returns>返回bool</returns>
+        </member>
+        <member name="P:DTTOOLS.DTIni.INIsPath">
+            <summary>
+            INI路径
+            </summary>
+        </member>
+        <member name="T:DTTOOLS.Print.DTPrint">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DTTOOLS.Print.DTPrint.#ctor">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:DTTOOLS.Print.DTPrint.#ctor(System.String)">
+            <summary>
+            初始化
+            </summary>
+            <param name="defaultPrinter">默认打印机</param>
+        </member>
+        <member name="M:DTTOOLS.Print.DTPrint.#ctor(System.String,System.Boolean,System.Drawing.Printing.Margins)">
+            <summary>
+            初始化
+            </summary>
+            <param name="defaultPrinter">默认打印机</param>
+            <param name="Landscape">是否横向打印</param>
+            <param name="margin">打印边距</param>
+        </member>
+        <member name="M:DTTOOLS.Print.DTPrint.#ctor(System.String,System.String,System.Boolean,System.Drawing.Printing.Margins)">
+            <summary>
+            初始化
+            </summary>
+            <param name="defaultPrinter">默认打印机</param>
+            <param name="page">纸张大小</param>
+            <param name="Landscape">纸张横竖</param>
+            <param name="margin">打印边距</param>
+        </member>
+        <member name="M:DTTOOLS.Print.DTPrint.Print(System.Drawing.Bitmap,System.Boolean)">
+            <summary>
+            打印
+            </summary>
+        </member>
+        <member name="M:DTTOOLS.Print.DTPrint.Print(System.Drawing.Bitmap,System.Boolean,System.Boolean)">
+            <summary>
+            打印
+            </summary>
+        </member>
+        <member name="M:DTTOOLS.Print.DTPrint.PrintView(System.Drawing.Bitmap,System.Boolean)">
+            <summary>
+            打印预览
+            </summary>
+        </member>
+        <member name="M:DTTOOLS.Print.DTPrint.PrintView(System.Drawing.Bitmap,System.Boolean,System.Boolean)">
+            <summary>
+            打印预览
+            </summary>
+        </member>
+        <member name="M:DTTOOLS.Print.DTPrint.Pd_BeginPrint(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
+            <summary>
+            打印前事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DTTOOLS.Print.DTPrint.Pd_PrintPage(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
+            <summary>
+            打印事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:DTTOOLS.Print.DTPrint.ImageCut">
+            <summary>
+            是否裁切
+            </summary>
+        </member>
+        <member name="M:DTTOOLS.Tools.Serialization.GetSerialization(System.Object)">
+            <summary>
+            序列化
+            </summary>
+            <param name="ob"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.Tools.Serialization.ScriptDeserialize``1(System.String)">
+            <summary>
+            反序列化
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="strJson"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DTTOOLS.Tools.TextReadWrite">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DTTOOLS.Tools.TextReadWrite.WriteText(System.String,System.String)">
+            <summary>
+            写入text
+            </summary>
+            <param name="path"></param>
+            <param name="meg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.Tools.TextReadWrite.ReadText(System.String)">
+            <summary>
+            读取text
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.Tools.XamlConfig.GetXmlDocByXmlContent(System.String)">
+            <summary>
+            根据XML文件内容获取XmlDocument对象
+            </summary>
+            <param name="xmlFileContent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.Tools.XamlConfig.GetXmlDocByFilePath(System.String)">
+            <summary>
+            根据XML文件路径获取XmlDocument对象
+            </summary>
+            <param name="xmlFilePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.Tools.XamlConfig.GetFirstChildNodeByName(System.Xml.XmlNode,System.String)">
+            <summary>
+            获取父节点下指定节点名称的第一个子节点
+            </summary>
+            <param name="parentXmlNode"></param>
+            <param name="childNodeName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.Tools.XamlConfig.GetChildNodesByName(System.Xml.XmlNode,System.String)">
+            <summary>
+            获取父节点下指定节点名称的子节点列表
+            </summary>
+            <param name="parentXmlNode">父节点</param>
+            <param name="nodeName">节点名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.Tools.XamlConfig.GetChildNodesByXPathExpr(System.Xml.XmlNode,System.String)">
+            <summary>
+            获取父节点下满足xpathExpr表达式的XML子节点列表
+            </summary>
+            <param name="parentXmlNode">父节点</param>
+            <param name="xpathExpr"></param>
+            <returns></returns>   
+        </member>
+        <member name="M:DTTOOLS.Tools.XamlConfig.GetFirstChildNode(System.Xml.XmlNode)">
+            <summary>
+            获取父节点下的第一个子节点
+            </summary>
+            <param name="parentXmlNode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.Tools.XamlConfig.GetChildNodes(System.Xml.XmlNode)">
+            <summary>
+            获取父节点的子节点列表
+            </summary>
+            <param name="parentXmlNode">父节点</param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.Tools.XamlConfig.ReadAttrValue(System.Xml.XmlNode,System.String)">
+            <summary>
+            读取某个XML节点的属性值（根据属性名）
+            </summary>
+            <param name="xmlNode"></param>
+            <param name="attrName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.Tools.XamlConfig.ReadFirstAttrValue(System.Xml.XmlNode,System.String,System.String)">
+            <summary>
+            读取父节点下指定节点名和属性名的第一个子节点的属性值
+            </summary>
+            <param name="parentXmlNode">XML父节点</param>
+            <param name="childNodeName">节点名称</param>
+            <param name="attrName">属性名</param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.Tools.XamlConfig.ReadAttrValues(System.Xml.XmlNode,System.String,System.String)">
+            <summary>
+            读取父节点下指定节点名和属性名的所有子节点的该属性值的数组
+            </summary>
+            <param name="parentXmlNode">XML文档</param>
+            <param name="childNodeName">节点名称</param>
+            <param name="attrName">属性名</param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.Tools.XamlConfig.ReadFirstChildNodeTextByName(System.Xml.XmlNode,System.String)">
+            <summary>
+            读取父节点下指定节点名的第一个子节点的文本
+            </summary>
+            <param name="parentXmlNode"></param>
+            <param name="childNodeName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.Tools.XamlConfig.ReadChildNodeTextsByName(System.Xml.XmlNode,System.String)">
+            <summary>
+            读取父节点下指定节点名的所有子节点的文本数组
+            </summary>
+            <param name="parentXmlNode"></param>
+            <param name="childNodeName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.Tools.XamlConfig.ReadFirstChildNodeText(System.Xml.XmlNode)">
+            <summary>
+            读取父节点下的第一个子节点的文本
+            </summary>
+            <param name="parentXmlNode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.Tools.XamlConfig.ReadChildNodeTexts(System.Xml.XmlNode)">
+            <summary>
+            读取父节点下的所有子节点的文本数组
+            </summary>
+            <param name="parentXmlNode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.Tools.XamlConfig.ReadNodeText(System.Xml.XmlNode)">
+            <summary>
+            读取XML节点文本
+            </summary>
+            <param name="xmlNode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.WinAIP.WindowsAPI.SendMessage(System.String,System.Int32)">
+            <summary>
+            发送消息
+            </summary>
+            <param name="winName">窗体名</param>
+            <param name="msg">消息</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

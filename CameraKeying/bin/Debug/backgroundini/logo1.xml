@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<BackGroundMode xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PhotoDates>
+    <PhotoData>
+      <X>42</X>
+      <Y>58</Y>
+      <Width>584</Width>
+      <Height>648</Height>
+    </PhotoData>
+  </PhotoDates>
+  <Qr />
+</BackGroundMode>

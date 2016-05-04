@@ -4,10 +4,7 @@
         Title="BackGroudWindows" Height="900" Width="1330" WindowStyle="None" WindowState="Maximized" WindowStartupLocation="CenterScreen" Background="#FFE8E6E7" Loaded="Window_Loaded_1">
     <Grid Name="backgroundgrid">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
@@ -38,8 +35,16 @@
                 <ImageBrush ImageSource="ImageResources/返回.png" Stretch="Uniform"/>
             </Button.Background>
         </Button>
-        <Button Name="but_ago" Content="上一页" Grid.Column="3" HorizontalAlignment="Left" Height="33" Margin="63,44,0,0" Grid.Row="2" VerticalAlignment="Top" Width="49" PreviewMouseDown="but_ago_PreviewMouseDown" />
-        <Button Name="but_next" Content="下一页" Grid.Column="3" HorizontalAlignment="Left" Height="33" Margin="185,44,0,0" Grid.Row="2" VerticalAlignment="Top" Width="48" PreviewMouseDown="but_next_PreviewMouseDown"/>
+        <Button Name="but_ago" Content="上一页" HorizontalAlignment="Left" Height="33" Margin="1054,44,0,0" Grid.Row="2" VerticalAlignment="Top" Width="49" PreviewMouseDown="but_ago_PreviewMouseDown" />
+        <Button Name="but_next" Content="下一页" HorizontalAlignment="Left" Height="33" Margin="1176,44,0,0" Grid.Row="2" VerticalAlignment="Top" Width="48" PreviewMouseDown="but_next_PreviewMouseDown"/>
+        <Grid Grid.Row="1" Name="Image_Grid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
 
     </Grid>
 </Window>

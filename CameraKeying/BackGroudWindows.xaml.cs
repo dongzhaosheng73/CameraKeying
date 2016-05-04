@@ -21,7 +21,7 @@ namespace CameraKeying
     {
         private readonly string _backgroundpath = Directory.GetCurrentDirectory() + "\\background\\";
         private List<string> _backgroundList = new List<string>();
-        private PageMode pagecontent { set; get; }
+        private PageMode Pagecontent { set; get; }
         public BackGroudWindows()
         {
             InitializeComponent();
@@ -29,7 +29,7 @@ namespace CameraKeying
 
         private void but_back_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            Close();
         }
 
         private void LoadBackGround()
@@ -57,19 +57,19 @@ namespace CameraKeying
 
                 img.MouseDown += img_MouseDown;
 
-                Grid.SetRow(img,1);
+              
                 Grid.SetColumn(img,i);
 
-                backgroundgrid.Children.Add(img);
+                 Image_Grid.Children.Add(img);
             }
 
-            pagecontent = new PageMode(0, (int)Math.Ceiling((double)_backgroundList.Count / 4),4,_backgroundList);
+            Pagecontent = new PageMode(0, (int)Math.Ceiling((double)_backgroundList.Count / 4),4,_backgroundList);
             
         }
 
         private void NextPage()
         {
-            var backlist = pagecontent.NextPage();
+            var backlist = Pagecontent.NextPage();
 
             if (!backlist.Any())
             {
@@ -77,27 +77,29 @@ namespace CameraKeying
                 return;
             }
 
+            Image_Grid.Children.Clear();
+
             for (var i = 0; i < backlist.Count; i++)
             {
                 var img = new Image
                 {
-                    Source = DTTOOLS.GDITools.LoadBitmapImage(_backgroundList[i], 0, 0, false)
+                    Source = DTTOOLS.GDITools.LoadBitmapImage(backlist[i], 0, 0, false)
                     ,
-                    DataContext = _backgroundList[i]
+                    DataContext = backlist[i]
                 };
 
                 img.MouseDown += img_MouseDown;
 
-                Grid.SetRow(img, 1);
+           
                 Grid.SetColumn(img, i);
 
-                backgroundgrid.Children.Add(img);
+                Image_Grid.Children.Add(img);
             }
         }
 
         private void AgoPage()
         {
-            var backlist = pagecontent.AgoPage();
+            var backlist = Pagecontent.AgoPage();
 
             if (!backlist.Any())
             {
@@ -105,28 +107,30 @@ namespace CameraKeying
                 return;
             }
 
+            Image_Grid.Children.Clear();
+
             for (var i = 0; i < backlist.Count; i++)
             {
                 var img = new Image
                 {
-                    Source = DTTOOLS.GDITools.LoadBitmapImage(_backgroundList[i], 0, 0, false)
+                    Source = DTTOOLS.GDITools.LoadBitmapImage(backlist[i], 0, 0, false)
                     ,
-                    DataContext = _backgroundList[i]
+                    DataContext = backlist[i]
                 };
 
                 img.MouseDown += img_MouseDown;
 
-                Grid.SetRow(img, 1);
+         
                 Grid.SetColumn(img, i);
 
-                backgroundgrid.Children.Add(img);
+                Image_Grid.Children.Add(img);
             }
         }
 
         private void img_MouseDown(object sender, MouseButtonEventArgs e)
         {
             var img = sender as Image;
-
+      
             ReadyTakePictureWindow readwindows = new ReadyTakePictureWindow(img.DataContext.ToString());
 
             readwindows.Show();
@@ -139,7 +143,7 @@ namespace CameraKeying
 
         private void but_next_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (pagecontent != null)
+            if (Pagecontent != null)
             {
                 NextPage();
             }
@@ -151,7 +155,7 @@ namespace CameraKeying
 
         private void but_ago_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (pagecontent != null)
+            if (Pagecontent != null)
             {
                 AgoPage();
             }
@@ -185,28 +189,26 @@ namespace CameraKeying
         {
             if (Pagecount <= 0 || Pageindex >= Pagecount || Pageindex < 0) return new List<string>();
 
-            var span = Pageindex * PageSpan - PageData.Count;
+            var span = index * PageSpan - PageData.Count;
 
-            int n;
+            //int n;
 
-            if (span < 0 && Math.Abs(span) > PageSpan)
-            {
-                n = PageSpan;
-            }
-            else if (span < 0)
-            {
-                n = Math.Abs(span);
-            }
-            else
-            {
-                return new List<string>();
-            }
+            //if (Math.Abs(span) > PageSpan)
+            //{
+            //    n = PageSpan;
+            //}
+            //else 
+            //{
+            //    n = Math.Abs(span);
+            //}
+
 
             var rList = new List<string>();
 
-            for (int i = (Pageindex) * PageSpan; i < n; i++)
+            for (int i =0 ; i < PageSpan && (index) * PageSpan + i < PageData.Count  ; i++)
             {
-                rList.Add(PageData[i]);
+
+                rList.Add(PageData[(index) * PageSpan + i]  );
             }
 
             Pageindex = index;

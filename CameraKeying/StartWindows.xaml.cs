@@ -25,8 +25,13 @@ namespace CameraKeying
 
         private void but_start_Click(object sender, RoutedEventArgs e)
         {
-            BackGroudWindows background = new BackGroudWindows();
+            var background = new BackGroudWindows();
             background.Show();
+        }
+
+        private void Border_PreviewMouseDown_1(object sender, MouseButtonEventArgs e)
+        {
+            Close();
         }
     }
 }

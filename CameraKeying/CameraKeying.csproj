@@ -36,7 +36,7 @@
   <ItemGroup>
     <Reference Include="Dzstools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\dzs\Desktop\GDITOOLS\GDITOOLS\bin\Release\Dzstools.dll</HintPath>
+      <HintPath>..\..\Tools\GDITOOLS\bin\Release\Dzstools.dll</HintPath>
     </Reference>
     <Reference Include="Emgu.CV">
       <HintPath>bin\Debug\emgucv\Emgu.CV.dll</HintPath>
@@ -67,10 +67,18 @@
     <Compile Include="BackGroudWindows.xaml.cs">
       <DependentUpon>BackGroudWindows.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BackGroundMode.cs" />
+    <Compile Include="EndWindows.xaml.cs">
+      <DependentUpon>EndWindows.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StartWindows.xaml.cs">
       <DependentUpon>StartWindows.xaml</DependentUpon>
     </Compile>
     <Page Include="BackGroudWindows.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EndWindows.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -142,6 +150,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="ImageResources\拍照键.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImageResources\界面5效果.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImageResources\姿势提示.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImageResources\界面3-1效果2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImageResources\倒计时背景.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

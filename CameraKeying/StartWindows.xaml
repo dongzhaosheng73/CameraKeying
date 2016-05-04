@@ -4,19 +4,21 @@
         Title="StartWindows" Height="900" Width="1330" WindowStyle="None" WindowState="Maximized" WindowStartupLocation="CenterScreen" Background="#FFE8E6E7">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="489*"/>
+            <RowDefinition Height="74*"/>
+            <RowDefinition Height="415*"/>
             <RowDefinition Height="243*"/>
             <RowDefinition Height="160*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="1.2*"/>
-            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="508*"/>
+            <ColumnDefinition Width="305*"/>
+            <ColumnDefinition Width="401*"/>
+            <ColumnDefinition Width="108*"/>
         </Grid.ColumnDefinitions>
         <Grid.Background>
             <ImageBrush ImageSource="ImageResources/界面1效果.png" Stretch="Uniform"/>
         </Grid.Background>
-        <Button x:Name="but_start" Content="" HorizontalAlignment="Left" Height="100" Margin="6,10,0,0" VerticalAlignment="Top" Width="300" BorderThickness="0" Grid.Row="1" Click="but_start_Click" Grid.Column="1">
+        <Button x:Name="but_start" Content="" HorizontalAlignment="Left" Height="100" Margin="6,10,0,0" VerticalAlignment="Top" Width="300" BorderThickness="0" Grid.Row="2" Click="but_start_Click" Grid.Column="1" Grid.ColumnSpan="2">
             <Button.Resources>
                 <Style TargetType="{x:Type Button}">
                     <Setter Property="OverridesDefaultStyle" Value="true"/>
@@ -37,7 +39,7 @@
                 <ImageBrush ImageSource="ImageResources/现在开始.png" Stretch="Uniform"/>
             </Button.Background>
         </Button>
-        <Button x:Name="but_start_Copy" Content="" HorizontalAlignment="Left" Height="100" Margin="7,127,0,0" VerticalAlignment="Top" Width="300" BorderThickness="0" Grid.Row="1" Click="but_start_Click" Grid.Column="1">
+        <Button x:Name="but_start_Copy" Content="" HorizontalAlignment="Left" Height="100" Margin="7,127,0,0" VerticalAlignment="Top" Width="300" BorderThickness="0" Grid.Row="2" Click="but_start_Click" Grid.Column="1" Grid.ColumnSpan="2">
             <Button.Resources>
                 <Style TargetType="{x:Type Button}">
                     <Setter Property="OverridesDefaultStyle" Value="true"/>
@@ -58,6 +60,7 @@
                 <ImageBrush ImageSource="ImageResources/start now.png" Stretch="Uniform"/>
             </Button.Background>
         </Button>
+        <Border BorderThickness="0" Grid.Column="3" OverridesDefaultStyle="True" PreviewMouseDown="Border_PreviewMouseDown_1" Background="#FFE8E6E7"/>
 
     </Grid>
 </Window>
